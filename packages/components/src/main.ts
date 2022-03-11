@@ -6,4 +6,4 @@
 
 // export default app
 
-export * from './lib/Counter.wc.svelte'
+export * from './lib/Counter.wc.svelte';
