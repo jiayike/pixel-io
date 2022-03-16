@@ -1,0 +1,31 @@
+{
+  "name": "pixel-ui-storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@storybook/addon-actions": "^6.5.0-alpha.48",
+    "@storybook/addon-essentials": "^6.5.0-alpha.48",
+    "@storybook/addon-links": "^6.5.0-alpha.48",
+    "@storybook/html": "^6.5.0-alpha.48",
+    "babel-loader": "^8.2.3",
+    "storybook-builder-vite": "^0.1.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiayike/pixel-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiayike/pixel-ui/issues"
+  },
+  "homepage": "https://github.com/jiayike/pixel-ui#readme",
+  "dependencies": {}
+}
