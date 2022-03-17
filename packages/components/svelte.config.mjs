@@ -1,7 +1,7 @@
 import sveltePreprocess from 'svelte-preprocess';
 
 export default {
-  include: '**/*.wc.svelte',
+  include: '**/*.svelte',
   compilerOptions: {
     customElement: true,
   },
