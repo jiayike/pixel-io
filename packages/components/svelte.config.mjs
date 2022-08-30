@@ -1,7 +1,6 @@
 import sveltePreprocess from 'svelte-preprocess';
 
 export default {
-  include: '**/*.svelte',
   compilerOptions: {
     customElement: true,
   },

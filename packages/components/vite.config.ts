@@ -11,5 +11,9 @@ export default defineConfig({
       input: fs.readdirSync(COMPONENTS_FOLDER).map((file) => `${COMPONENTS_FOLDER}${file}`),
     },
   },
-  plugins: [svelte({})],
+  plugins: [
+    svelte({
+      include: '**/*.svelte',
+    }),
+  ],
 });
