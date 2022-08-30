@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/jiayike/pixel-ui#readme",
   "devDependencies": {
-    "husky": "^7.0.4"
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.1"
   }
 }
