@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2017"
+  },
+  "include": [".storybook/*"],
+  "exclude": ["node_modules"]
+}
