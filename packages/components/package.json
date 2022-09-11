@@ -2,8 +2,19 @@
   "name": "@pixel-ui/components",
   "private": true,
   "version": "0.0.0",
+  "main": "./dist/components.umd.js",
+  "module": "./dist/components.mjs",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/components.mjs",
+      "require": "./dist/components.umd.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
