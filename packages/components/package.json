@@ -2,11 +2,11 @@
   "name": "@pixel-ui/components",
   "private": true,
   "version": "0.0.0",
-  "main": "./dist/components.umd.js",
-  "module": "./dist/components.mjs",
   "files": [
     "dist"
   ],
+  "main": "./dist/components.umd.js",
+  "module": "./dist/components.mjs",
   "exports": {
     ".": {
       "import": "./dist/components.mjs",
@@ -14,7 +14,7 @@
     }
   },
   "scripts": {
-    "dev": "vite build --watch",
+    "dev": "pnpm build -- --watch",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
@@ -25,19 +25,19 @@
     "precheck": "npm run lint:fix"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@sveltejs/vite-plugin-svelte": "^1.0.8",
     "@tsconfig/svelte": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.14.0",
-    "@typescript-eslint/parser": "^5.14.0",
-    "eslint": "^8.10.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
     "eslint-plugin-svelte3": "^4.0.0",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.6.0",
-    "svelte": "^3.44.0",
-    "svelte-check": "^2.2.7",
-    "svelte-preprocess": "^4.9.8",
-    "tslib": "^2.3.1",
-    "typescript": "^4.5.4",
-    "vite": "^3.0.9"
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.50.1",
+    "svelte-check": "^2.9.0",
+    "svelte-preprocess": "^4.10.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.3"
   }
 }
