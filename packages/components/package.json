@@ -19,10 +19,10 @@
     "preview": "vite preview",
     "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
     "lint": "eslint ./src/**/*.{js,svelte,ts}",
-    "lint:fix": "npm run lint -- --fix",
-    "prelint": "npm run format",
+    "lint:fix": "pnpm lint -- --fix",
+    "prelint": "pnpm format",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "precheck": "npm run lint:fix"
+    "precheck": "pnpm lint:fix"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.8",

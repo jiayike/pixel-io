@@ -5,6 +5,7 @@ import * as path from "path";
 
 const storyPaths = [
   ["Components", path.resolve(__dirname, "../../../packages/components")],
+  ["HTML|CSS", path.resolve(__dirname, "../../../packages/styles")],
   ["Examples", path.resolve(__dirname, "../stories")],
 ];
 
