@@ -6,7 +6,7 @@ import StylelintPlugin from "vite-plugin-stylelint";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/main.ts"),
+      entry: path.resolve(__dirname, "src/main.scss"),
       name: "@pixel-ui/styles",
     },
   },
