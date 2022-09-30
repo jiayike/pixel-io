@@ -1,0 +1,11 @@
+@use "../../common/font.scss";
+
+.pixel-button {
+  background-color: var(--primary-colour);
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
