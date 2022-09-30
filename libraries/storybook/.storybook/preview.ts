@@ -1,3 +1,7 @@
+// Import workspace packages here
+import "@pixel-ui/components";
+import "@pixel-ui/styles";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
