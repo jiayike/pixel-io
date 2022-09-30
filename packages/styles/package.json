@@ -5,12 +5,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/styles.umd.js",
-  "module": "./dist/styles.mjs",
+  "main": "./dist/style.css",
+  "module": "./dist/style.css",
   "exports": {
     ".": {
-      "import": "./dist/styles.mjs",
-      "require": "./dist/styles.umd.js"
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "type": "commonjs",
@@ -27,17 +27,17 @@
     "check": "pnpm stylelint:fix && pnpm lint:fix"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.38.0",
-    "eslint": "^8.23.1",
-    "postcss": "^8.4.16",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "sass": "^1.55.0",
-    "stylelint": "^14.12.1",
+    "stylelint": "^14.13.0",
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard-scss": "^5.0.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4",
     "vite-plugin-stylelint": "^3.0.7"
   }
 }
