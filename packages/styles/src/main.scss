@@ -1,4 +1,5 @@
-@use "./common/colours.scss";
-@use "./common/font.scss";
+@use "./abstracts/colours";
 
-@use "./atoms/button/button.scss";
+@use "./base/font";
+
+@use "./atoms/button";
