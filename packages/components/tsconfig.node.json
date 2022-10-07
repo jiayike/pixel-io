@@ -4,5 +4,5 @@
     "module": "esnext",
     "moduleResolution": "node"
   },
-  "include": [".eslintrc.js", "vite.config.ts", "svelte.config.mjs"]
+  "include": ["vite.config.ts", "svelte.config.js"]
 }
