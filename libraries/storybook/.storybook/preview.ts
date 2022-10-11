@@ -1,7 +1,7 @@
 import "@pixel-ui/styles";
-import { defineCustomElement } from "@pixel-ui/components/dist/components/pixel-button";
+import { defineCustomElements } from "@pixel-ui/components/dist/loader";
 
-defineCustomElement();
+defineCustomElements();
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

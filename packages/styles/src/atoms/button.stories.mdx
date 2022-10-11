@@ -1,5 +1,4 @@
 import { Meta, Canvas, Story } from "@storybook/addon-docs";
-import "./_button.scss";
 
 <Meta title="HTML|CSS/Atoms/Button" />
 
@@ -10,7 +9,15 @@ import "./_button.scss";
 <Canvas>
   <Story name="Primary">
     {() => `
-  <button class='pixel-button'>hello world</button>
+  <button class='pixel-button pixel-button__primary'>Primary Button</button>
+  `}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Secondary">
+    {() => `
+  <button class='pixel-button pixel-button__secondary'>Secondary Button</button>
   `}
   </Story>
 </Canvas>

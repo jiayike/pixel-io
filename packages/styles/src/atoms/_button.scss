@@ -1,7 +1,15 @@
 .pixel-button {
-  background-color: var(--primary-colour);
   padding: 2rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+
+  &__primary {
+    background-color: var(--primary-colour);
+  }
+
+  &__secondary {
+    background-color: var(--secondary-colour);
+  }
 
   &:hover {
     filter: brightness(90%);

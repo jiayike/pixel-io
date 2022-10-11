@@ -1,6 +1,9 @@
-import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { Meta, Canvas, Story, Description } from '@storybook/addon-docs';
+import Readme from './readme.md';
 
 <Meta title="Components/Atoms/Button" />
+
+<Readme />
 
 # Button
 
@@ -9,7 +12,17 @@ import { Meta, Canvas, Story } from '@storybook/addon-docs';
 <Canvas>
   <Story name="Primary">
     {() => `
-  <pixel-button>hello world</pixel-button>
+  <pixel-button>Primary Button</pixel-button>
+  `}
+  </Story>
+</Canvas>
+
+## Secondary Button
+
+<Canvas>
+  <Story name="Secondary">
+    {() => `
+  <pixel-button type='secondary'>Secondary Button</pixel-button>
   `}
   </Story>
 </Canvas>
