@@ -14,12 +14,17 @@
     "dev": "stencil build --dev --watch --docs",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "format": "prettier --write ./src/**/*.{js,html,ts}",
+    "lint": "eslint ./src/**/*.{ts,tsx}",
+    "lint:fix": "pnpm lint -- --fix",
+    "check": "pnpm format && pnpm lint:fix"
   },
   "dependencies": {
     "@stencil/core": "^2.18.1"
   },
   "devDependencies": {
+    "@stencil/eslint-plugin": "^0.4.0",
     "@types/jest": "^27.5.2",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
