@@ -1,6 +1,7 @@
-// Import workspace packages here
-import "@pixel-ui/components";
 import "@pixel-ui/styles";
+import { defineCustomElement } from "@pixel-ui/components/dist/components/pixel-button";
+
+defineCustomElement();
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
