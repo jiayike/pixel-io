@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description    | Type     | Default     |
-| -------- | --------- | -------------- | -------- | ----------- |
-| `type`   | `type`    | The first name | `string` | `undefined` |
+| Property | Attribute | Description                  | Type                       | Default     |
+| -------- | --------- | ---------------------------- | -------------------------- | ----------- |
+| `type`   | `type`    | The style of type the button | `"primary" \| "secondary"` | `'primary'` |
 
 
 ----------------------------------------------
