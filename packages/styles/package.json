@@ -23,7 +23,7 @@
     "lint:fix": "pnpm lint -- --fix",
     "stylelint": "stylelint ./src/**/*.scss",
     "stylelint:fix": "pnpm stylelint -- --fix",
-    "check": "pnpm format && pnpm lint:fix && pnpm stylelint:fix && pnpm lint:fix"
+    "check": "pnpm format && pnpm lint:fix && pnpm stylelint:fix"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
