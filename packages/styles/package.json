@@ -26,9 +26,9 @@
     "check": "pnpm format && pnpm lint:fix && pnpm stylelint:fix && pnpm lint:fix"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
-    "eslint": "^8.24.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
     "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "sass": "^1.55.0",
@@ -36,7 +36,7 @@
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard-scss": "^5.0.0",
     "typescript": "^4.8.4",
-    "vite": "^3.1.6",
+    "vite": "^3.1.7",
     "vite-plugin-stylelint": "^3.0.7"
   },
   "dependencies": {
