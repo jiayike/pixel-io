@@ -7,7 +7,8 @@
     "dev": "pnpm --stream --parallel dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "reset": "rm -rf node_modules && rm -f pnpm-lock.yaml"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,10 @@
   },
   "homepage": "https://github.com/jiayike/pixel-ui#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.1"
+    "husky": "^8.0.2"
   }
 }

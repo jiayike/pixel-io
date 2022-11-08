@@ -12,7 +12,7 @@ UI component library
 
 Storybook currently requires package hoisting: https://github.com/storybookjs/builder-vite/issues/55
 
-`pnpm i --shamefully-hoist`
+`pnpm i --shamefully-hoist -r`
 
 ## Start
 
