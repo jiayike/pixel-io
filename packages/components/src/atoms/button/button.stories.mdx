@@ -1,0 +1,26 @@
+import { Meta, Canvas, Story, Description } from "@storybook/addon-docs";
+import "./button";
+
+<Meta title="Atoms/Button1" />
+
+# Button
+
+## Primary Button
+
+<Canvas>
+  <Story name="Primary">
+    {() => `
+  <pixel-button>Primary Button</pixel-button>
+  `}
+  </Story>
+</Canvas>
+
+## Secondary Button
+
+<Canvas>
+  <Story name="Secondary">
+    {() => `
+  <pixel-button type="secondary">Secondary Button</pixel-button>
+  `}
+  </Story>
+</Canvas>

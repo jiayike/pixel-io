@@ -8,6 +8,7 @@
   "main": "./dist/style.css",
   "module": "./dist/style.css",
   "exports": {
+    "./src/": "./src/",
     ".": {
       "import": "./dist/style.css",
       "require": "./dist/style.css"
