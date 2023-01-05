@@ -24,8 +24,7 @@
     "format": "prettier --write ./src/**/*.{js,html,ts}",
     "lint": "eslint ./src/**/*.{ts,tsx}",
     "lint:fix": "pnpm lint --fix",
-    "check": "pnpm format && pnpm lint:fix",
-    "reset": "rm -rf node_modules"
+    "check": "pnpm format && pnpm lint:fix"
   },
   "dependencies": {
     "@stencil/core": "^2.21.0"
