@@ -1,14 +1,12 @@
-import type { StorybookViteConfig } from "@storybook/builder-vite";
-import type { StoriesEntry } from "@storybook/core-common";
+import type { StorybookConfig } from "@storybook/html-vite";
+import type { StoriesEntry } from "@storybook/types";
 import { HmrOptions, InlineConfig, mergeConfig } from "vite";
 import * as path from "path";
-
 const storyPaths = [
   ["Components", path.resolve(__dirname, "../../../packages/components")],
   ["HTML|CSS", path.resolve(__dirname, "../../../packages/styles")],
   ["Examples", path.resolve(__dirname, "../stories")],
 ];
-
 const findStories = (): StoriesEntry[] =>
   storyPaths.map(([name, path]) => ({
     // 👇 The directory field sets the directory your stories
@@ -18,20 +16,22 @@ const findStories = (): StoriesEntry[] =>
     // 👇 Storybook will load all files that contain the stories extension
     files: "**/*.stories.@(js|jsx|ts|tsx|mdx)",
   }));
-
-const config: StorybookViteConfig = {
+const config: StorybookConfig = {
   stories: findStories(),
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
   ],
-  framework: "@storybook/html",
+  framework: {
+    name: "@storybook/html-vite",
+    options: {},
+  },
   core: {
     builder: "@storybook/builder-vite",
   },
   features: {
-    // storyStoreV7: true,
+    storyStoreV7: true,
   },
   async viteFinal(config: InlineConfig) {
     const { port } = config.server!.hmr as HmrOptions;
@@ -57,6 +57,8 @@ const config: StorybookViteConfig = {
       },
     });
   },
+  docs: {
+    autodocs: true,
+  },
 };
-
 export default config;

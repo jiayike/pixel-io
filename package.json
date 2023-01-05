@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "commit": "cz",
-    "reset": "rm -rf node_modules && rm -f pnpm-lock.yaml"
+    "reset": "pnpm -r exec rm -rf node_modules && rm -rf node_modules && rm -f pnpm-lock.yaml"
   },
   "repository": {
     "type": "git",
