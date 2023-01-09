@@ -1,4 +1,5 @@
 import { Meta, Description, Canvas, Story } from "@storybook/blocks";
+import { html } from "lit-html";
 import "./button";
 
 <Meta title="Atoms/Button" />
@@ -9,9 +10,7 @@ import "./button";
 
 <Canvas>
   <Story name="Primary">
-    {() => `
-  <pixel-button>Primary Button</pixel-button>
-  `}
+    {html`<pixel-button>Primary Button</pixel-button>`}
   </Story>
 </Canvas>
 
@@ -19,8 +18,6 @@ import "./button";
 
 <Canvas>
   <Story name="Secondary">
-    {() => `
-  <pixel-button type="secondary">Secondary Button</pixel-button>
-  `}
+    {html`<pixel-button type="secondary">Secondary Button</pixel-button>`}
   </Story>
 </Canvas>
