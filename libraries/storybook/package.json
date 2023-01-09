@@ -16,15 +16,15 @@
   "devDependencies": {
     "@pixel-ui/components": "workspace:*",
     "@pixel-ui/styles": "workspace:*",
-    "@storybook/addon-actions": "^7.0.0-beta.19",
-    "@storybook/addon-essentials": "^7.0.0-beta.19",
-    "@storybook/addon-interactions": "^7.0.0-beta.19",
-    "@storybook/addon-links": "^7.0.0-beta.19",
-    "@storybook/html": "^7.0.0-beta.19",
-    "@storybook/html-vite": "^7.0.0-beta.19",
-    "@storybook/testing-library": "^0.0.14-next.1",
+    "@storybook/addon-actions": "^7.0.0-beta.21",
+    "@storybook/addon-essentials": "^7.0.0-beta.21",
+    "@storybook/addon-interactions": "7.0.0-beta.21",
+    "@storybook/addon-links": "^7.0.0-beta.21",
+    "@storybook/web-components": "^7.0.0-beta.21",
+    "@storybook/web-components-vite": "^7.0.0-beta.21",
+    "lit-html": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.0.0-beta.19"
+    "storybook": "^7.0.0-beta.21"
   }
 }

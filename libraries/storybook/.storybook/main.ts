@@ -1,10 +1,10 @@
-import type { StorybookConfig } from "@storybook/html-vite";
+import type { StorybookConfig } from "@storybook/web-components-vite";
 import type { StoriesEntry } from "@storybook/types";
 import { HmrOptions, InlineConfig, mergeConfig } from "vite";
 import * as path from "path";
 const storyPaths = [
-  ["Components", path.resolve(__dirname, "../../../packages/components")],
-  ["HTML|CSS", path.resolve(__dirname, "../../../packages/styles")],
+  ["Components", path.resolve(__dirname, "../../../packages/components/src")],
+  ["HTML|CSS", path.resolve(__dirname, "../../../packages/styles/src")],
   ["Examples", path.resolve(__dirname, "../stories")],
 ];
 const findStories = (): StoriesEntry[] =>
@@ -24,7 +24,7 @@ const config: StorybookConfig = {
     "@storybook/addon-interactions",
   ],
   framework: {
-    name: "@storybook/html-vite",
+    name: "@storybook/web-components-vite",
     options: {},
   },
   core: {

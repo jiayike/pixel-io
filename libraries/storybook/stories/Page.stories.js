@@ -1,23 +1,19 @@
-import { within, userEvent } from '@storybook/testing-library';
-import { createPage } from './Page';
+import { Page } from './Page';
+import * as HeaderStories from './Header.stories';
 
 export default {
   title: 'Example/Page',
-  parameters: {
-    // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
-    layout: 'fullscreen',
-  },
 };
 
-const Template = () => createPage();
-
-export const LoggedOut = Template.bind({});
+const Template = (args) => Page(args);
 
 export const LoggedIn = Template.bind({});
+LoggedIn.args = {
+  // More on composing args: https://storybook.js.org/docs/web-components/writing-stories/args#args-composition
+  ...HeaderStories.LoggedIn.args,
+};
 
-// More on interaction testing: https://storybook.js.org/docs/html/writing-tests/interaction-testing
-LoggedIn.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-  const loginButton = await canvas.getByRole('button', { name: /Log in/i });
-  await userEvent.click(loginButton);
+export const LoggedOut = Template.bind({});
+LoggedOut.args = {
+  ...HeaderStories.LoggedOut.args,
 };
