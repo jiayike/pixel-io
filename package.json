@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jiayike/pixel-ui#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.4.0",
+    "@commitlint/cli": "^17.4.1",
     "@commitlint/config-conventional": "^17.4.0",
     "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
