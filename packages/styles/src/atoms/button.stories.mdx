@@ -1,4 +1,5 @@
 import { Meta, Canvas, Story } from "@storybook/blocks";
+import { html } from "lit-html";
 
 <Meta title="Atoms/Button" />
 
@@ -7,17 +8,11 @@ import { Meta, Canvas, Story } from "@storybook/blocks";
 ## Primary Button
 
 <Canvas>
-  <Story name="Primary">
-    {() => `
-  <button class='pixel-button pixel-button__primary'>Primary Button</button>
-  `}
-  </Story>
+  <Story name="Primary">{html`<button class="pixel-button pixel-button__primary">Primary Button</button>`}</Story>
 </Canvas>
 
+## Secondary Button
+
 <Canvas>
-  <Story name="Secondary">
-    {() => `
-  <button class='pixel-button pixel-button__secondary'>Secondary Button</button>
-  `}
-  </Story>
+  <Story name="Secondary">{html`<button class="pixel-button pixel-button__secondary">Secondary Button</button>`}</Story>
 </Canvas>
