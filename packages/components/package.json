@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@pixel-ui/styles": "workspace:*",
-    "lit": "^2.5.0"
+    "lit": "^2.6.1"
   },
   "devDependencies": {
     "sass": "^1.57.1",
