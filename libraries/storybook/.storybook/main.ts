@@ -37,26 +37,27 @@ const config: StorybookConfig = {
     storyStoreV7: true,
   },
   async viteFinal(config: InlineConfig) {
-    const { port } = config.server!.hmr as HmrOptions;
+    const { port } = (config.server?.hmr as HmrOptions) || {};
 
     // return the customized config
     return mergeConfig(config, {
       // customize the Vite config here
       server: {
         // Configure Vite for HMR with Gitpod.
-        hmr: process.env.GITPOD_WORKSPACE_URL
-          ? {
-              // Due to port fowarding, we have to replace
-              // 'https' with the forwarded port, as this
-              // is the URI created by Gitpod.
-              host: process.env.GITPOD_WORKSPACE_URL.replace(
-                "https://",
-                `${port}-`
-              ),
-              protocol: "wss",
-              clientPort: 443,
-            }
-          : true,
+        hmr:
+          process.env.GITPOD_WORKSPACE_URL && port
+            ? {
+                // Due to port fowarding, we have to replace
+                // 'https' with the forwarded port, as this
+                // is the URI created by Gitpod.
+                host: process.env.GITPOD_WORKSPACE_URL.replace(
+                  "https://",
+                  `${port}-`
+                ),
+                protocol: "wss",
+                clientPort: 443,
+              }
+            : true,
       },
     });
   },
