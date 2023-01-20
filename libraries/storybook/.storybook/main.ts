@@ -3,8 +3,11 @@ import type { StoriesEntry } from "@storybook/types";
 import { HmrOptions, InlineConfig, mergeConfig } from "vite";
 import * as path from "path";
 const storyPaths = [
-  ["Components", path.resolve(__dirname, "../../../packages/components/src")],
-  ["HTML|CSS", path.resolve(__dirname, "../../../packages/styles/src")],
+  [
+    "Components",
+    path.resolve(__dirname, "../node_modules/@pixel-ui/components/src"),
+  ],
+  ["HTML|CSS", path.resolve(__dirname, "../node_modules/@pixel-ui/styles/src")],
   ["Examples", path.resolve(__dirname, "../stories")],
 ];
 const findStories = (): StoriesEntry[] =>
