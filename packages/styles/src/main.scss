@@ -1,12 +1,4 @@
-// abstracts/
-@use "./abstracts/variables";
-
-// base/
-@use "./base/reset";
-@use "./base/typography";
+@use "./global";
 
 // components/
 @use "./atoms/button";
-
-// themes/
-@use "./themes/theme";
