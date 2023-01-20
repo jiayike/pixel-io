@@ -1,0 +1,52 @@
+name: Deployment
+run-name: ${{ github.actor }} is deploying Pixel UI 🚀
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm i
+      - name: Lint and Test
+        run: |
+          pnpm --parallel check
+          pnpm --parallel test
+      - name: Build
+        uses: actions/upload-artifact@master
+        with:
+          name: storybook-static
+          path: libraries/storybook
+          if-no-files-found: error
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: storybook-static
+          path: .
+      - uses: actions/configure-pages@v1
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@main
