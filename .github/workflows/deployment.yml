@@ -27,10 +27,12 @@ jobs:
           pnpm --parallel check
           # pnpm --parallel test
       - name: Build
+        run: pnpm build
+      - name: Upload
         uses: actions/upload-artifact@master
         with:
-          name: storybook-static
-          path: libraries/storybook
+          name: page
+          path: libraries/storybook/storybook-static
           if-no-files-found: error
 
   deploy:
@@ -42,7 +44,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@master
         with:
-          name: storybook-static
+          name: page
           path: .
       - uses: actions/configure-pages@v1
       - uses: actions/upload-pages-artifact@v1
