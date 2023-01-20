@@ -5,7 +5,8 @@
   "type": "module",
   "main": "dist/index.es.js",
   "exports": {
-    ".": "./dist/index.es.js"
+    ".": "./dist/index.es.js",
+    "./dist/": "./dist/"
   },
   "types": "types/index.d.ts",
   "files": [
