@@ -15,5 +15,11 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "jsdom",
+    reporters: ["verbose"],
+    coverage: {
+      reporter: ["text", "json", "html"],
+      all: true,
+      include: ["src/**/*.ts"],
+    },
   },
 });
