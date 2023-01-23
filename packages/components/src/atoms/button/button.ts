@@ -21,9 +21,20 @@ export class PixelButton extends LitElement {
   @property()
   type: ButtonTypes = "primary";
 
+  private onClick = () => {
+    const event = new CustomEvent("onClick", {
+      bubbles: true,
+      composed: true,
+    });
+    this.dispatchEvent(event);
+  };
+
   render() {
     return html`
-      <button class="pixel-button pixel-button__${this.type}">
+      <button
+        class="pixel-button pixel-button__${this.type}"
+        @click=${this.onClick}
+      >
         <slot />
       </button>
     `;
