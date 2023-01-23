@@ -40,7 +40,7 @@ jobs:
       - name: Lint and Test
         run: |
           pnpm --parallel check
-          # pnpm --parallel test
+          pnpm --parallel test
       - name: Build
         run: pnpm build
       - name: Upload
