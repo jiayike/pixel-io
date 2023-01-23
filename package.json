@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pnpm --stream --parallel dev",
     "build": "pnpm --stream --parallel build && pnpm -F storybook build-storybook",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "pnpm --stream --parallel test",
+    "test:watch": "pnpm --stream --parallel test:watch",
     "prepare": "husky install",
     "commit": "cz",
     "reset": "pnpm -r exec rm -rf node_modules && rm -rf node_modules && rm -f pnpm-lock.yaml"
