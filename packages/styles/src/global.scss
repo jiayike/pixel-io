@@ -1,9 +1,6 @@
-// abstracts/
-@use "./abstracts/variables";
+// themes/
+@use "./themes/theme";
 
 // base/
 @use "./base/reset";
 @use "./base/typography";
-
-// themes/
-@use "./themes/theme";
