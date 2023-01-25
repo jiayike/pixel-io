@@ -37,14 +37,14 @@ import "./button";
   }}
 />
 
-# Button
-
-## Primary Button
-
 export const Template = ({ content, ...args }) => html`<pixel-button
   ${spread(args)}
   >${content}</pixel-button
 >`;
+
+# Button
+
+## Primary Button
 
 <Canvas>
   <Story name="Primary" args={{ content: "Primary Button" }}>

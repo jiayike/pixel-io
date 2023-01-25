@@ -1,18 +1,23 @@
 import { Meta, Canvas, Story } from "@storybook/blocks";
-import { html } from "lit-html";
 
 <Meta title="Atoms/Button" />
+
+export const Template = ({ content, ...args }) => `<button class="${args.class}">${content}</button>`;
 
 # Button
 
 ## Primary Button
 
 <Canvas>
-  <Story name="Primary">{html`<button class="pixel-button pixel-button__primary">Primary Button</button>`}</Story>
+  <Story name="Primary" args={{ class: "pixel-button pixel-button__primary", content: "Primary Button" }}>
+    {Template.bind()}
+  </Story>
 </Canvas>
 
 ## Secondary Button
 
 <Canvas>
-  <Story name="Secondary">{html`<button class="pixel-button pixel-button__secondary">Secondary Button</button>`}</Story>
+  <Story name="Secondary" args={{ class: "pixel-button pixel-button__secondary", content: "Secondary Button" }}>
+    {Template.bind()}
+  </Story>
 </Canvas>
