@@ -1,6 +1,6 @@
 import { LitElement, unsafeCSS, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import buttonStyle from "@pixel-ui/styles/src/atoms/_button.scss?inline";
+import buttonStyle from "@pixel-ui/styles/src/atoms/button/_button.scss?inline";
 import reset from "@pixel-ui/styles/src/base/_reset.scss?inline";
 
 type ButtonTypes = "primary" | "secondary";
