@@ -1,0 +1,24 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import { html } from "lit";
+
+<Meta title="Molecules/Navigation" />
+
+# Navigation
+
+## Navigation With Buttons
+
+<Canvas>
+  <Story name="With Buttons">
+    {html`
+      <nav class="pixel-navigation">
+        <div class="pixel-navigation__wrapper">
+          <button class="pixel-button pixel-button__primary">Home</button>
+          <button class="pixel-button pixel-button__primary">Content</button>
+          <button class="pixel-button pixel-button__primary">Stories</button>
+          <button class="pixel-button pixel-button__primary">About Us</button>
+          <button class="pixel-button pixel-button__primary">FAQ</button>
+        </div>
+      </nav>
+    `}
+  </Story>
+</Canvas>
