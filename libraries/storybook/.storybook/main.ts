@@ -3,13 +3,14 @@ import type { StoriesEntry } from "@storybook/types";
 import { HmrOptions, InlineConfig, mergeConfig } from "vite";
 import * as path from "path";
 const storyPaths = [
+  ["HTML|CSS", path.resolve(__dirname, "../node_modules/@pixel-ui/styles/src")],
   [
     "Components",
     path.resolve(__dirname, "../node_modules/@pixel-ui/components/src"),
   ],
-  ["HTML|CSS", path.resolve(__dirname, "../node_modules/@pixel-ui/styles/src")],
   ["Examples", path.resolve(__dirname, "../stories")],
 ];
+
 const findStories = (): StoriesEntry[] =>
   storyPaths.map(([name, path]) => ({
     // 👇 The directory field sets the directory your stories
@@ -19,6 +20,7 @@ const findStories = (): StoriesEntry[] =>
     // 👇 Storybook will load all files that contain the stories extension
     files: "**/*.stories.@(js|jsx|ts|tsx|mdx)",
   }));
+
 const config: StorybookConfig = {
   stories: findStories(),
   addons: [
