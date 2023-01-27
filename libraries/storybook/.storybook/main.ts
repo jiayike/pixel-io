@@ -8,7 +8,6 @@ const storyPaths = [
     "Components",
     path.resolve(__dirname, "../node_modules/@pixel-ui/components/src"),
   ],
-  ["Examples", path.resolve(__dirname, "../stories")],
 ];
 
 const findStories = (): StoriesEntry[] =>
