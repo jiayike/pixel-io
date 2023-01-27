@@ -1,0 +1,22 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import { html } from "lit";
+
+<Meta title="Organisms/Header" />
+
+# Header
+
+## Header With Buttons
+
+<Canvas>
+  <Story name="With Buttons" args={{ class: "pixel-header" }}>
+    {html`
+      <header class="pixel-header">
+        <button class="pixel-button pixel-button__primary">Home</button>
+        <button class="pixel-button pixel-button__primary">Content</button>
+        <button class="pixel-button pixel-button__primary">Stories</button>
+        <button class="pixel-button pixel-button__primary">About Us</button>
+        <button class="pixel-button pixel-button__primary">FAQ</button>
+      </header>
+    `}
+  </Story>
+</Canvas>

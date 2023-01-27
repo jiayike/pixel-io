@@ -1,8 +1,9 @@
 import { Meta, Canvas, Story } from "@storybook/blocks";
+import { html } from "lit";
 
 <Meta title="Atoms/Button" />
 
-export const Template = ({ content, ...args }) => `<button class="${args.class}">${content}</button>`;
+export const Template = ({ content, ...args }) => html`<button class="${args.class}">${content}</button>`;
 
 # Button
 
