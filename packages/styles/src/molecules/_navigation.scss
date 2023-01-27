@@ -1,0 +1,14 @@
+@use "../base/animations";
+
+.pixel-navigation {
+  overflow-y: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

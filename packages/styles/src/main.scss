@@ -5,5 +5,5 @@
 @use "./global";
 
 // components/
-@use "./atoms/button/button";
-@use "./organisms/header/header";
+@use "./atoms/button";
+@use "./molecules/navigation";
