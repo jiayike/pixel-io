@@ -13,7 +13,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
-          release-type: node
+          command: manifest
           package-name: release-please-package
           monorepo-tags: true
       # # The logic below handles the npm publication:
