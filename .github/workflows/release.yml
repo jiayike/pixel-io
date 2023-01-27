@@ -7,6 +7,7 @@ on:
 name: Release
 jobs:
   release-please:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -41,3 +42,8 @@ jobs:
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       #   if: ${{ steps.release.outputs.release_created }}
+  error:
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deployment did not run successfully"
