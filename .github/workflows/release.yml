@@ -1,7 +1,9 @@
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Deployment"]
+    branches: [main]
+    types:
+      - completed
 name: Release
 jobs:
   release-please:
