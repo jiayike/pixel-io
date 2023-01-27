@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/jiayike/pixel-ui/compare/styles-v0.1.0...styles-v1.0.0) (2023-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* header css class has been renamed to navigation
+
+### Features
+
+* rename header to navigation ([c210910](https://github.com/jiayike/pixel-ui/commit/c210910ebe77c5919247c313fd682ca0b4f4949f))
+
 ## [0.1.0](https://github.com/jiayike/pixel-ui/compare/styles-v0.0.1...styles-v0.1.0) (2023-01-27)
 
 
