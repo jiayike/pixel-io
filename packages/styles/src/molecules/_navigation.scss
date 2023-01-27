@@ -10,5 +10,25 @@
   &__wrapper {
     display: flex;
     justify-content: space-evenly;
+
+    * {
+      @extend %animate-slide-in;
+
+      &:nth-child(2) {
+        @extend %animate-delay-1;
+      }
+
+      &:nth-child(3) {
+        @extend %animate-delay-2;
+      }
+
+      &:nth-child(4) {
+        @extend %animate-delay-3;
+      }
+
+      &:nth-child(5) {
+        @extend %animate-delay-4;
+      }
+    }
   }
 }
