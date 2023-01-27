@@ -6,17 +6,19 @@ UI component library
 
 ## Requirements
 
-- pnpm ^6.32.1
+- pnpm ^7.22.0
 
 ## Install
 
-Storybook currently requires package hoisting: https://github.com/storybookjs/builder-vite/issues/55
-
-`pnpm i --shamefully-hoist -r`
+`pnpm i`
 
 ## Start
 
 `pnpm dev`
+
+## Test
+
+`pnpm test`
 
 ## Folders
 
