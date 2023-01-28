@@ -19,28 +19,29 @@ jobs:
           command: manifest
           package-name: release-please-package
           monorepo-tags: true
-      # # The logic below handles the npm publication:
-      # - uses: actions/checkout@v2
-      #   # these if statements ensure that a publication only occurs when
-      #   # a new release is created:
-      #   if: ${{ steps.release.outputs.release_created }}
-      # - uses: pnpm/action-setup@v2
-      #   with:
-      #     version: 7
-      # - name: Use Node.js ${{ matrix.node-version }}
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: ${{ matrix.node-version }}
-      #     cache: "pnpm"
-      #     registry-url: "https://registry.npmjs.org"
-      #   if: ${{ steps.release.outputs.release_created }}
-      # - name:
-      #   run: pnpm i
-      #   if: ${{ steps.release.outputs.release_created }}
-      # - run: pnpm -r publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      #   if: ${{ steps.release.outputs.release_created }}
+      # The logic below handles the npm publication:
+      - uses: actions/checkout@v2
+        # these if statements ensure that a publication only occurs when
+        # a new release is created:
+        if: ${{ steps.release.outputs.release_created }}
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+          registry-url: "https://registry.npmjs.org"
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Install dependencies
+        run: pnpm i
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Publish packages
+        run: pnpm -r publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
   error:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     runs-on: ubuntu-latest
