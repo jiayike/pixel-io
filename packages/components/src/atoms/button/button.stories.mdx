@@ -11,12 +11,28 @@ import "./button";
   }}
   argTypes={{
     type: {
-      description: "Style type of button.",
+      description: "Style type of the button.",
       control: { type: "select" },
       options: ["primary", "secondary"],
       table: {
         type: { summary: "string" },
         defaultValue: { summary: "primary" },
+      },
+    },
+    animationType: {
+      description: "Animation type of the button.",
+      control: { type: "select" },
+      options: [undefined, "slide-in"],
+      table: {
+        type: { summary: "string" },
+      },
+    },
+    animationDelay: {
+      description: "Animation delay for the button.",
+      control: { type: "select" },
+      options: [undefined, "1", "2", "3", "4"],
+      table: {
+        type: { summary: "string" },
       },
     },
     content: {
@@ -60,6 +76,32 @@ export const Template = ({ content, ...args }) => html`<pixel-button
   <Story
     name="Secondary"
     args={{ type: "secondary", content: "Secondary Button" }}
+  >
+    {Template.bind()}
+  </Story>
+</Canvas>
+
+## Button Animation
+
+<Canvas>
+  <Story
+    name="Animation"
+    args={{ content: "Button Animation", animationType: "slide-in" }}
+  >
+    {Template.bind()}
+  </Story>
+</Canvas>
+
+## Button Animation With Delay
+
+<Canvas>
+  <Story
+    name="Animation With Delay"
+    args={{
+      content: "Button Animation With Delay",
+      animationType: "slide-in",
+      animationDelay: "4",
+    }}
   >
     {Template.bind()}
   </Story>
