@@ -21,3 +21,27 @@ import "../../atoms/button/button";
     </pixel-navigation>`}
   </Story>
 </Canvas>
+
+## Navigation with animated buttons
+
+<Canvas>
+  <Story name="With Animated Buttons">
+    {html`
+      <pixel-navigation>
+        <pixel-button animationType="slide-in">Home</pixel-button>
+        <pixel-button animationType="slide-in" animationDelay="1"
+          >Content</pixel-button
+        >
+        <pixel-button animationType="slide-in" animationDelay="2"
+          >Stories</pixel-button
+        >
+        <pixel-button animationType="slide-in" animationDelay="3"
+          >About Us</pixel-button
+        >
+        <pixel-button animationType="slide-in" animationDelay="4"
+          >FAQ</pixel-button
+        >
+      </pixel-navigation>
+    `}
+  </Story>
+</Canvas>
