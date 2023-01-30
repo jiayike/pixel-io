@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from "@storybook/blocks";
+import { html } from "lit-html";
+import { spread } from "@open-wc/lit-helpers";
+import "./navigation";
+import "../../atoms/button/button";
+
+<Meta title="Molecules/Navigation" />
+
+# Navigation
+
+## Default Navigation
+
+<Canvas>
+  <Story name="Default">
+    {html`<pixel-navigation>
+      <pixel-button>Home</pixel-button>
+      <pixel-button>Content</pixel-button>
+      <pixel-button>Stories</pixel-button>
+      <pixel-button>About Us</pixel-button>
+      <pixel-button>FAQ</pixel-button>
+    </pixel-navigation>`}
+  </Story>
+</Canvas>
