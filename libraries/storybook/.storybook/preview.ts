@@ -26,9 +26,5 @@ export const parameters = {
   },
   docs: {
     theme,
-    story: {
-      inline: false,
-      // iframeHeight: "auto",
-    },
   },
 };
