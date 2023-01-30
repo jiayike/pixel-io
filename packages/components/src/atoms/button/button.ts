@@ -6,10 +6,9 @@ import reset from "@pixel-ui/styles/src/base/_reset.scss?inline";
 type ButtonTypes = "primary" | "secondary";
 
 /**
- * An example element.
+ * Button Component.
  *
  * @slot - This element has a slot
- * @csspart button - The button
  */
 @customElement("pixel-button")
 export class PixelButton extends LitElement {
