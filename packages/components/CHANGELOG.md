@@ -1,13 +1,5 @@
 # Changelog
 
-## [0.2.1](https://github.com/jiayike/pixel-ui/compare/components-v0.2.0...components-v0.2.1) (2023-01-30)
-
-
-### Features
-
-* button animations ([6d5da88](https://github.com/jiayike/pixel-ui/commit/6d5da884c550c6ed9bf47b52a7d836f89c3db941))
-* navigation component ([b41f25c](https://github.com/jiayike/pixel-ui/commit/b41f25c0d313f7c89d980adf099f42607efce145))
-
 ## [0.2.0](https://github.com/jiayike/pixel-ui/compare/components-v0.1.0...components-v0.2.0) (2023-01-28)
 
 
