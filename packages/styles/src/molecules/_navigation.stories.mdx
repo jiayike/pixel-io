@@ -22,3 +22,21 @@ import { html } from "lit";
     `}
   </Story>
 </Canvas>
+
+## Navigation with animated buttons
+
+<Canvas>
+  <Story name="With Animated Buttons">
+    {html`
+      <nav class="pixel-navigation">
+        <div class="pixel-navigation__wrapper">
+          <button class="pixel-button pixel-button__primary animate__slide-in">Home</button>
+          <button class="pixel-button pixel-button__primary animate__slide-in animate__delay-1">Content</button>
+          <button class="pixel-button pixel-button__primary animate__slide-in animate__delay-2">Stories</button>
+          <button class="pixel-button pixel-button__primary animate__slide-in animate__delay-3">About Us</button>
+          <button class="pixel-button pixel-button__primary animate__slide-in animate__delay-4">FAQ</button>
+        </div>
+      </nav>
+    `}
+  </Story>
+</Canvas>
