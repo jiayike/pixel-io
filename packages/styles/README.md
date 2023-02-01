@@ -1,4 +1,4 @@
-# @pixel-ui/styles
+# @pixel-io/styles
 
 ## Architecture
 

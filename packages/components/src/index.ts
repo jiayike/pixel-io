@@ -1,2 +1,2 @@
-import "@pixel-ui/styles/src/global.scss";
+import "@pixel-io/styles/src/global.scss";
 export { PixelButton } from "./atoms/button/button";

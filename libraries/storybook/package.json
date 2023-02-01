@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@pixel-ui/components": "workspace:*",
-    "@pixel-ui/styles": "workspace:*",
+    "@pixel-io/components": "workspace:*",
+    "@pixel-io/styles": "workspace:*",
     "@storybook/addon-actions": "7.0.0-beta.33",
     "@storybook/addon-essentials": "7.0.0-beta.33",
     "@storybook/addon-interactions": "7.0.0-beta.21",

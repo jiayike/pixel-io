@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/main.scss"),
-      name: "@pixel-ui/styles",
+      name: "@pixel-io/styles",
     },
   },
   plugins: [StylelintPlugin({ fix: true })],

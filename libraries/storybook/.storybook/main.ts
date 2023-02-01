@@ -3,10 +3,10 @@ import type { StoriesEntry } from "@storybook/types";
 import { HmrOptions, InlineConfig, mergeConfig } from "vite";
 import * as path from "path";
 const storyPaths = [
-  ["HTML|CSS", path.resolve(__dirname, "../node_modules/@pixel-ui/styles/src")],
+  ["HTML|CSS", path.resolve(__dirname, "../node_modules/@pixel-io/styles/src")],
   [
     "Components",
-    path.resolve(__dirname, "../node_modules/@pixel-ui/components/src"),
+    path.resolve(__dirname, "../node_modules/@pixel-io/components/src"),
   ],
 ];
 

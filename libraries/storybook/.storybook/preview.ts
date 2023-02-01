@@ -1,5 +1,5 @@
 import { themes } from "@storybook/theming";
-import "@pixel-ui/styles";
+import "@pixel-io/styles";
 
 const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const theme = isDarkMode ? themes.dark : themes.light;

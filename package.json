@@ -1,5 +1,5 @@
 {
-  "name": "pixel-ui",
+  "name": "pixel-io",
   "private": true,
   "version": "0.0.1",
   "description": "",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jiayike/pixel-ui.git"
+    "url": "git+https://github.com/jiayike/pixel-io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jiayike/pixel-ui/issues"
+    "url": "https://github.com/jiayike/pixel-io/issues"
   },
-  "homepage": "https://github.com/jiayike/pixel-ui#readme",
+  "homepage": "https://github.com/jiayike/pixel-io#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",

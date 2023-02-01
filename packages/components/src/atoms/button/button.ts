@@ -1,8 +1,8 @@
 import { LitElement, unsafeCSS, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import buttonStyle from "@pixel-ui/styles/src/atoms/_button.scss?inline";
-import reset from "@pixel-ui/styles/src/base/_reset.scss?inline";
-import animations from "@pixel-ui/styles/src/base/_animations.scss?inline";
+import buttonStyle from "@pixel-io/styles/src/atoms/_button.scss?inline";
+import reset from "@pixel-io/styles/src/base/_reset.scss?inline";
+import animations from "@pixel-io/styles/src/base/_animations.scss?inline";
 
 type ButtonTypes = "primary" | "secondary";
 type AnimationTypes = "slide-in";

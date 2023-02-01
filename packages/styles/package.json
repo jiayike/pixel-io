@@ -1,6 +1,6 @@
 {
-  "name": "@pixel-ui/styles",
-  "version": "0.2.0",
+  "name": "@pixel-io/styles",
+  "version": "0.2.1",
   "files": [
     "dist"
   ],

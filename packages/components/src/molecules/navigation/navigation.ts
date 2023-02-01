@@ -1,7 +1,7 @@
 import { html, LitElement, unsafeCSS } from "lit";
 import { customElement } from "lit/decorators.js";
-import navigationStyle from "@pixel-ui/styles/src/molecules/_navigation.scss?inline";
-import reset from "@pixel-ui/styles/src/base/_reset.scss?inline";
+import navigationStyle from "@pixel-io/styles/src/molecules/_navigation.scss?inline";
+import reset from "@pixel-io/styles/src/base/_reset.scss?inline";
 
 /**
  * Navigation Component.
