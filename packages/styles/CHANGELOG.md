@@ -1,12 +1,5 @@
 # Changelog
 
-## [0.2.1](https://github.com/jiayike/pixel-io/compare/styles-v0.2.0...styles-v0.2.1) (2023-02-01)
-
-
-### Features
-
-* adjust timing in slide in animation ([10317cb](https://github.com/jiayike/pixel-io/commit/10317cb638e8481ab4b5c2a2b38e0f75bde8b063))
-
 ## [0.2.0](https://github.com/jiayike/pixel-io/compare/styles-v0.1.0...styles-v0.2.0) (2023-01-28)
 
 ### ⚠ BREAKING CHANGES

@@ -1,14 +1,5 @@
 # Changelog
 
-## [0.2.1](https://github.com/jiayike/pixel-io/compare/components-v0.2.0...components-v0.2.1) (2023-02-01)
-
-
-### Features
-
-* button animations ([6d5da88](https://github.com/jiayike/pixel-io/commit/6d5da884c550c6ed9bf47b52a7d836f89c3db941))
-* export pixel-navigation component ([d224aeb](https://github.com/jiayike/pixel-io/commit/d224aeb43fdc86b84ea26f8c040c02498df7eb46))
-* navigation component ([b41f25c](https://github.com/jiayike/pixel-io/commit/b41f25c0d313f7c89d980adf099f42607efce145))
-
 ## [0.2.0](https://github.com/jiayike/pixel-io/compare/components-v0.1.0...components-v0.2.0) (2023-01-28)
 
 ### ⚠ BREAKING CHANGES
