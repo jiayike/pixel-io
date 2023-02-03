@@ -26,18 +26,20 @@
     "check": "pnpm format && pnpm lint:fix && pnpm stylelint:fix"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
-    "eslint": "^8.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
-    "sass": "^1.57.1",
+    "sass": "^1.58.0",
     "stylelint": "^14.16.1",
+    "stylelint-config-concentric-order": "^5.1.0",
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard-scss": "^6.1.0",
-    "typescript": "^4.9.4",
-    "vite": "^4.0.4",
-    "vite-plugin-stylelint": "^4.1.6"
+    "stylelint-scss": "^4.3.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vite-plugin-stylelint": "^4.1.8"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
