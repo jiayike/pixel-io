@@ -48,3 +48,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deployment did not run successfully"
+      - run: exit 1
