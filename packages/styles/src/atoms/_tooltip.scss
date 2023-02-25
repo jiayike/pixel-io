@@ -1,0 +1,73 @@
+@use "../abstracts/variables";
+
+$border-width: 0.5rem;
+$arrow-size: 0.03rem;
+$arrow-border-size: $arrow-size + 0.8rem;
+$arrow-outline-size: $arrow-border-size + 0.4rem;
+
+%tooltip-arrow-bottom {
+    border-left: $arrow-outline-size solid transparent;
+    border-right: $arrow-outline-size solid transparent;
+    border-top: $arrow-outline-size solid variables.$white;
+    transform: translateY(100%);
+
+    &::before {
+        border-left: $arrow-border-size solid transparent;
+        border-right: $arrow-border-size solid transparent;
+        border-top: $arrow-border-size solid variables.$black;
+        content: "";
+        position: absolute;
+        transform: translate(-50%, -$arrow-outline-size);
+    }
+
+    &::after {
+        border-left: ($arrow-size + $border-width) solid transparent;
+        border-right: ($arrow-size + $border-width) solid transparent;
+        border-top: ($arrow-size + $border-width) solid var(--primary-colour);
+        content: "";
+        position: absolute;
+        transform: translate(-50%, -$arrow-outline-size - $border-width);
+    }
+}
+
+.pixel-tooltip {
+    display: inline-block;
+    margin: $arrow-outline-size;
+    position: relative;
+    
+    &__wrapper {
+        background-color: var(--primary-colour);
+        border: 0.5rem solid variables.$black;
+        border-radius: 0.5rem;
+        box-shadow: 0.2rem 0.2rem 1rem variables.$black;
+        outline: 0.3rem solid variables.$white;
+        padding: 1rem 1.5rem;
+    }
+
+    &__arrow {
+        position: absolute;
+
+        &--top {
+            bottom: 0;
+            left: calc(50% - $arrow-outline-size);
+
+            @extend %tooltip-arrow-bottom;
+        }
+
+        &--top-left {
+            bottom: 0;
+            right: 0;
+
+            @extend %tooltip-arrow-bottom;
+        }
+
+        &--top-right {
+            bottom: 0;
+            left: 0;
+
+            @extend %tooltip-arrow-bottom;
+        }
+
+    }
+
+}

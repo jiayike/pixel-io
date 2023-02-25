@@ -1,0 +1,19 @@
+import { Meta, Canvas, Story } from "@storybook/blocks";
+import { html } from "lit";
+
+<Meta title="Atoms/Tooltip" />
+
+export const Template = ({ content, ...args }) => html`
+  <div class="pixel-tooltip">
+    <div class="pixel-tooltip__arrow ${args.class}"></div>
+    <div class="pixel-tooltip__wrapper">${content}</div>
+  </div>
+`;
+
+# Tooltip
+
+## Tooltip
+
+<Canvas>
+  <Story name="Tooltip">{Template({ content: "Top Middle", class: "pixel-tooltip__arrow--top" })}</Story>
+</Canvas>

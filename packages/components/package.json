@@ -25,13 +25,13 @@
   "devDependencies": {
     "@open-wc/lit-helpers": "^0.5.1",
     "@open-wc/testing-helpers": "^2.1.4",
-    "@testing-library/dom": "^8.20.0",
+    "@testing-library/dom": "^9.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "@vitest/coverage-c8": "^0.28.4",
+    "@vitest/coverage-c8": "^0.29.1",
     "jsdom": "^21.1.0",
-    "sass": "^1.58.0",
+    "sass": "^1.58.3",
     "typescript": "^4.9.5",
-    "vite": "^4.1.1",
-    "vitest": "^0.28.4"
+    "vite": "^4.1.4",
+    "vitest": "^0.29.1"
   }
 }

@@ -1,9 +1,9 @@
 .pixel-navigation {
-  position: absolute;
-  right: 0;
   bottom: 0;
   left: 0;
   overflow-y: hidden;
+  position: absolute;
+  right: 0;
 
   &__wrapper {
     display: flex;
