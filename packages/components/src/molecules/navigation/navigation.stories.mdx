@@ -1,8 +1,8 @@
-import { Meta, Canvas, Story, ArgsTable } from "@storybook/blocks";
-import { html } from "lit-html";
-import { spread } from "@open-wc/lit-helpers";
-import "./navigation";
-import "../../atoms/button/button";
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/blocks';
+import { html } from 'lit-html';
+import { spread } from '@open-wc/lit-helpers';
+import './navigation';
+import '../../atoms/button/button';
 
 <Meta title="Molecules/Navigation" />
 
@@ -29,18 +29,10 @@ import "../../atoms/button/button";
     {html`
       <pixel-navigation>
         <pixel-button animationType="slide-in">Home</pixel-button>
-        <pixel-button animationType="slide-in" animationDelay="1"
-          >Content</pixel-button
-        >
-        <pixel-button animationType="slide-in" animationDelay="2"
-          >Stories</pixel-button
-        >
-        <pixel-button animationType="slide-in" animationDelay="3"
-          >About Us</pixel-button
-        >
-        <pixel-button animationType="slide-in" animationDelay="4"
-          >FAQ</pixel-button
-        >
+        <pixel-button animationType="slide-in" animationDelay="1">Content</pixel-button>
+        <pixel-button animationType="slide-in" animationDelay="2">Stories</pixel-button>
+        <pixel-button animationType="slide-in" animationDelay="3">About Us</pixel-button>
+        <pixel-button animationType="slide-in" animationDelay="4">FAQ</pixel-button>
       </pixel-navigation>
     `}
   </Story>

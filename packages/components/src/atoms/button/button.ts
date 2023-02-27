@@ -1,31 +1,27 @@
-import { LitElement, unsafeCSS, html } from "lit";
-import { customElement, property } from "lit/decorators.js";
-import buttonStyle from "@pixel-io/styles/src/atoms/_button.scss?inline";
-import reset from "@pixel-io/styles/src/base/_reset.scss?inline";
-import animations from "@pixel-io/styles/src/base/_animations.scss?inline";
+import { LitElement, unsafeCSS, html, TemplateResult } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import buttonStyle from '@pixel-io/styles/src/atoms/_button.scss?inline';
+import reset from '@pixel-io/styles/src/base/_reset.scss?inline';
+import animations from '@pixel-io/styles/src/base/_animations.scss?inline';
 
-type ButtonTypes = "primary" | "secondary";
-type AnimationTypes = "slide-in";
-type AnimationDelayTypes = "1" | "2" | "3" | "4";
+type ButtonTypes = 'primary' | 'secondary';
+type AnimationTypes = 'slide-in';
+type AnimationDelayTypes = '1' | '2' | '3' | '4';
 
 /**
  * Button Component.
  *
  * @slot - This element has a slot
  */
-@customElement("pixel-button")
+@customElement('pixel-button')
 export class PixelButton extends LitElement {
-  static styles = [
-    unsafeCSS(reset),
-    unsafeCSS(animations),
-    unsafeCSS(buttonStyle),
-  ];
+  static styles = [unsafeCSS(reset), unsafeCSS(animations), unsafeCSS(buttonStyle)];
 
   /**
    * Button style type.
    */
   @property()
-  type: ButtonTypes = "primary";
+  type: ButtonTypes = 'primary';
 
   /**
    * Button animation type.
@@ -39,8 +35,8 @@ export class PixelButton extends LitElement {
   @property()
   animationDelay?: AnimationDelayTypes;
 
-  private onClick = () => {
-    const event = new CustomEvent("onClick", {
+  private onClick = (): void => {
+    const event = new CustomEvent('onClick', {
       bubbles: true,
       composed: true,
     });
@@ -57,16 +53,12 @@ export class PixelButton extends LitElement {
       classes.push(`animate__delay-${this.animationDelay}`);
     }
 
-    return classes.join(" ");
+    return classes.join(' ');
   };
 
-  render() {
+  render(): TemplateResult {
     return html`
-      <button
-        class="pixel-button pixel-button__${this
-          .type} ${this.getAnimationClasses()}"
-        @click=${this.onClick}
-      >
+      <button class="pixel-button pixel-button__${this.type} ${this.getAnimationClasses()}" @click=${this.onClick}>
         <slot />
       </button>
     `;
@@ -75,6 +67,6 @@ export class PixelButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "pixel-button": PixelButton;
+    'pixel-button': PixelButton;
   }
 }

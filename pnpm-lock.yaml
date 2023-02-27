@@ -49,9 +49,14 @@ importers:
       '@pixel-io/styles': workspace:*
       '@testing-library/dom': ^9.0.0
       '@testing-library/user-event': ^14.4.3
+      '@typescript-eslint/eslint-plugin': ^5.53.0
+      '@typescript-eslint/parser': ^5.53.0
       '@vitest/coverage-c8': ^0.29.1
+      eslint: ^8.34.0
+      eslint-plugin-lit: ^1.8.2
       jsdom: ^21.1.0
       lit: ^2.6.1
+      prettier: ^2.8.4
       sass: ^1.58.3
       typescript: ^4.9.5
       vite: ^4.1.4
@@ -64,8 +69,13 @@ importers:
       '@open-wc/testing-helpers': 2.1.4
       '@testing-library/dom': 9.0.0
       '@testing-library/user-event': 14.4.3_@testing-library+dom@9.0.0
+      '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
+      '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
       '@vitest/coverage-c8': 0.29.1_vitest@0.29.1
+      eslint: 8.34.0
+      eslint-plugin-lit: 1.8.2_eslint@8.34.0
       jsdom: 21.1.0
+      prettier: 2.8.4
       sass: 1.58.3
       typescript: 4.9.5
       vite: 4.1.4_sass@1.58.3
@@ -4752,6 +4762,18 @@ packages:
       source-map: 0.6.1
     dev: true
 
+  /eslint-plugin-lit/1.8.2_eslint@8.34.0:
+    resolution: {integrity: sha512-4mOGcSRNEPMh7AN2F7Iy6no36nuFgyYOsnTRhFw1k8xyy1Zm6QOp788ywDvJqy+eelFbLPBhq20Qr55a887Dmw==}
+    engines: {node: '>= 12'}
+    peerDependencies:
+      eslint: '>= 5'
+    dependencies:
+      eslint: 8.34.0
+      parse5: 6.0.1
+      parse5-htmlparser2-tree-adapter: 6.0.1
+      requireindex: 1.2.0
+    dev: true
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -7168,6 +7190,16 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /parse5-htmlparser2-tree-adapter/6.0.1:
+    resolution: {integrity: sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==}
+    dependencies:
+      parse5: 6.0.1
+    dev: true
+
+  /parse5/6.0.1:
+    resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
+    dev: true
+
   /parse5/7.1.2:
     resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==}
     dependencies:
@@ -7745,6 +7777,11 @@ packages:
   /require-from-string/2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /requireindex/1.2.0:
+    resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
+    engines: {node: '>=0.10.5'}
     dev: true
 
   /requires-port/1.0.0:

@@ -1,69 +1,66 @@
-import { Meta, Canvas, Story, ArgsTable } from "@storybook/blocks";
-import { html } from "lit-html";
-import { spread } from "@open-wc/lit-helpers";
-import "./button";
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/blocks';
+import { html } from 'lit-html';
+import { spread } from '@open-wc/lit-helpers';
+import './button';
 
 <Meta
   title="Atoms/Button"
   args={{
-    type: "primary",
-    content: "Button",
+    type: 'primary',
+    content: 'Button',
   }}
   argTypes={{
     type: {
-      description: "Style type of the button.",
-      control: { type: "select" },
-      options: ["primary", "secondary"],
+      description: 'Style type of the button.',
+      control: { type: 'select' },
+      options: ['primary', 'secondary'],
       table: {
-        type: { summary: "string" },
-        defaultValue: { summary: "primary" },
+        type: { summary: 'string' },
+        defaultValue: { summary: 'primary' },
       },
     },
     animationType: {
-      description: "Animation type of the button.",
-      control: { type: "select" },
-      options: [null, "slide-in"],
+      description: 'Animation type of the button.',
+      control: { type: 'select' },
+      options: [null, 'slide-in'],
       table: {
-        type: { summary: "string" },
+        type: { summary: 'string' },
       },
     },
     animationDelay: {
-      description: "Animation delay for the button.",
-      control: { type: "select" },
-      options: [null, "1", "2", "3", "4"],
+      description: 'Animation delay for the button.',
+      control: { type: 'select' },
+      options: [null, '1', '2', '3', '4'],
       table: {
-        type: { summary: "string" },
+        type: { summary: 'string' },
       },
     },
     content: {
-      description: "Content of the button.",
-      control: { type: "text" },
+      description: 'Content of the button.',
+      control: { type: 'text' },
       table: {
-        type: { summary: "string" },
-        defaultValue: { summary: "Button" },
+        type: { summary: 'string' },
+        defaultValue: { summary: 'Button' },
       },
     },
-    "@onClick": {
-      description: "Button clicked event.",
-      action: "clicked",
+    '@onClick': {
+      description: 'Button clicked event.',
+      action: 'clicked',
       table: {
-        type: { summary: "Event" },
+        type: { summary: 'Event' },
       },
     },
   }}
 />
 
-export const Template = ({ content, ...args }) => html`<pixel-button
-  ${spread(args)}
-  >${content}</pixel-button
->`;
+export const Template = ({ content, ...args }) => html`<pixel-button ${spread(args)}>${content}</pixel-button>`;
 
 # Button
 
 ## Primary Button
 
 <Canvas>
-  <Story name="Primary" args={{ content: "Primary Button" }}>
+  <Story name="Primary" args={{ content: 'Primary Button' }}>
     {Template.bind()}
   </Story>
 </Canvas>
@@ -73,10 +70,7 @@ export const Template = ({ content, ...args }) => html`<pixel-button
 ## Secondary Button
 
 <Canvas>
-  <Story
-    name="Secondary"
-    args={{ type: "secondary", content: "Secondary Button" }}
-  >
+  <Story name="Secondary" args={{ type: 'secondary', content: 'Secondary Button' }}>
     {Template.bind()}
   </Story>
 </Canvas>
@@ -84,10 +78,7 @@ export const Template = ({ content, ...args }) => html`<pixel-button
 ## Button Animation
 
 <Canvas>
-  <Story
-    name="Animation"
-    args={{ content: "Button Animation", animationType: "slide-in" }}
-  >
+  <Story name="Animation" args={{ content: 'Button Animation', animationType: 'slide-in' }}>
     {Template.bind()}
   </Story>
 </Canvas>
@@ -98,9 +89,9 @@ export const Template = ({ content, ...args }) => html`<pixel-button
   <Story
     name="Animation With Delay"
     args={{
-      content: "Button Animation With Delay",
-      animationType: "slide-in",
-      animationDelay: "4",
+      content: 'Button Animation With Delay',
+      animationType: 'slide-in',
+      animationDelay: '4',
     }}
   >
     {Template.bind()}

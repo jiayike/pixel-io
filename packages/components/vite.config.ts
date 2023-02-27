@@ -1,12 +1,12 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
     lib: {
-      entry: "src/index.ts",
-      formats: ["es"],
+      entry: 'src/index.ts',
+      formats: ['es'],
     },
     rollupOptions: {
       external: /^lit/,
@@ -14,12 +14,13 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: "jsdom",
-    reporters: ["verbose"],
+    environment: 'jsdom',
+    reporters: ['verbose'],
     coverage: {
-      reporter: ["text", "json", "html"],
+      reporter: ['text', 'json', 'html'],
       all: true,
-      include: ["src/**/*.ts"],
+      include: ['src/**/*.ts'],
+      provider: 'c8',
     },
   },
 });
