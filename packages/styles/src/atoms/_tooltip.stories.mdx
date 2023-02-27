@@ -1,5 +1,5 @@
-import { Meta, Canvas, Story } from "@storybook/blocks";
-import { html } from "lit";
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import { html } from 'lit';
 
 <Meta title="Atoms/Tooltip" />
 
@@ -15,7 +15,7 @@ export const Template = ({ content, ...args }) => html`
 ## Tooltip
 
 <Canvas>
-  <Story name="Default">{Template({ content: "Tooltip", class: "pixel-tooltip__arrow--top" })}</Story>
+  <Story name="Default">{Template({ content: 'Tooltip', class: 'pixel-tooltip__arrow--top' })}</Story>
 </Canvas>
 
 ## Top Tooltip
@@ -24,11 +24,11 @@ export const Template = ({ content, ...args }) => html`
   <Story name="Top">
     {html`<div>
       ${Template({
-        content: "Top Left",
-        class: "pixel-tooltip__arrow--top-left",
-      })} ${Template({ content: "Top Middle", class: "pixel-tooltip__arrow--top" })} ${Template({
-        content: "Top Right",
-        class: "pixel-tooltip__arrow--top-right",
+        content: 'Top Left',
+        class: 'pixel-tooltip__arrow--top-left',
+      })} ${Template({ content: 'Top Middle', class: 'pixel-tooltip__arrow--top' })} ${Template({
+        content: 'Top Right',
+        class: 'pixel-tooltip__arrow--top-right',
       })}
     </div>`}
   </Story>
@@ -40,11 +40,11 @@ export const Template = ({ content, ...args }) => html`
   <Story name="Bottom">
     {html`<div>
       ${Template({
-        content: "Bottom Left",
-        class: "pixel-tooltip__arrow--bottom-left",
-      })} ${Template({ content: "Bottom Middle", class: "pixel-tooltip__arrow--bottom" })} ${Template({
-        content: "Bottom Right",
-        class: "pixel-tooltip__arrow--bottom-right",
+        content: 'Bottom Left',
+        class: 'pixel-tooltip__arrow--bottom-left',
+      })} ${Template({ content: 'Bottom Middle', class: 'pixel-tooltip__arrow--bottom' })} ${Template({
+        content: 'Bottom Right',
+        class: 'pixel-tooltip__arrow--bottom-right',
       })}
     </div>`}
   </Story>
@@ -53,11 +53,11 @@ export const Template = ({ content, ...args }) => html`
 ## Left Tooltip
 
 <Canvas>
-  <Story name="Left">{Template({ content: "Left", class: "pixel-tooltip__arrow--left" })}</Story>
+  <Story name="Left">{Template({ content: 'Left', class: 'pixel-tooltip__arrow--left' })}</Story>
 </Canvas>
 
 ## Right Tooltip
 
 <Canvas>
-  <Story name="Right">{Template({ content: "Right", class: "pixel-tooltip__arrow--right" })}</Story>
+  <Story name="Right">{Template({ content: 'Right', class: 'pixel-tooltip__arrow--right' })}</Story>
 </Canvas>

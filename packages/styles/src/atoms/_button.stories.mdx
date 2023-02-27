@@ -1,5 +1,5 @@
-import { Meta, Canvas, Story } from "@storybook/blocks";
-import { html } from "lit";
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import { html } from 'lit';
 
 <Meta title="Atoms/Button" />
 
@@ -10,7 +10,7 @@ export const Template = ({ content, ...args }) => html`<button class="${args.cla
 ## Primary Button
 
 <Canvas>
-  <Story name="Primary" args={{ class: "pixel-button pixel-button__primary", content: "Primary Button" }}>
+  <Story name="Primary" args={{ class: 'pixel-button pixel-button__primary', content: 'Primary Button' }}>
     {Template.bind()}
   </Story>
 </Canvas>
@@ -18,7 +18,7 @@ export const Template = ({ content, ...args }) => html`<button class="${args.cla
 ## Secondary Button
 
 <Canvas>
-  <Story name="Secondary" args={{ class: "pixel-button pixel-button__secondary", content: "Secondary Button" }}>
+  <Story name="Secondary" args={{ class: 'pixel-button pixel-button__secondary', content: 'Secondary Button' }}>
     {Template.bind()}
   </Story>
 </Canvas>

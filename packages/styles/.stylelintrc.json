@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-standard-scss"],
+  "extends": ["stylelint-config-standard-scss", "stylelint-prettier/recommended"],
   "plugins": ["stylelint-scss", "stylelint-order"],
   "rules": {
     "order/order": ["custom-properties", "dollar-variables", "declarations", "rules", "at-rules"],

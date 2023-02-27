@@ -19,190 +19,190 @@ $arrow-outline-transparent-style: $arrow-outline-width solid transparent;
 $arrow-outline-style: $arrow-outline-width solid variables.$white;
 
 %tooltip-arrow-vertical {
-    border-left: $arrow-outline-transparent-style;
-    border-right: $arrow-outline-transparent-style;
+  border-left: $arrow-outline-transparent-style;
+  border-right: $arrow-outline-transparent-style;
 
-    &::before {
-        border-left: $arrow-border-transparent-style;
-        border-right: $arrow-border-transparent-style;
-        content: "";
-        position: absolute;
-    }
+  &::before {
+    border-left: $arrow-border-transparent-style;
+    border-right: $arrow-border-transparent-style;
+    content: "";
+    position: absolute;
+  }
 
-    &::after {
-        border-left: $arrow-transparent-style;
-        border-right: $arrow-transparent-style;
-        content: "";
-        position: absolute;
-    }
+  &::after {
+    border-left: $arrow-transparent-style;
+    border-right: $arrow-transparent-style;
+    content: "";
+    position: absolute;
+  }
 }
 
 %tooltip-arrow-bottom {
-    border-top: $arrow-outline-style;
-    transform: translateY(100%);
+  border-top: $arrow-outline-style;
+  transform: translateY(100%);
 
-    &::before {
-        border-top: $arrow-border-style;
-        top: -$offset;
-        transform: translate(-50%, calc(-1 * $arrow-outline-width));
-    }
+  &::before {
+    border-top: $arrow-border-style;
+    top: -$offset;
+    transform: translate(-50%, calc(-1 * $arrow-outline-width));
+  }
 
-    &::after {
-        border-top: $arrow-style;
-        top: -$offset;
-        transform: translate(-50%, calc(-1 * $arrow-outline-width - $border-width));
-    }
+  &::after {
+    border-top: $arrow-style;
+    top: -$offset;
+    transform: translate(-50%, calc(-1 * $arrow-outline-width - $border-width));
+  }
 
-    @extend %tooltip-arrow-vertical;
+  @extend %tooltip-arrow-vertical;
 }
 
 %tooltip-arrow-top {
-    border-bottom: $arrow-outline-style;
-    transform: translateY(-100%);
+  border-bottom: $arrow-outline-style;
+  transform: translateY(-100%);
 
-    &::before {
-        border-bottom: $arrow-border-style;
-        bottom: -$offset;
-        transform: translate(-50%, $arrow-outline-width);
-    }
+  &::before {
+    border-bottom: $arrow-border-style;
+    bottom: -$offset;
+    transform: translate(-50%, $arrow-outline-width);
+  }
 
-    &::after {
-        border-bottom: $arrow-style;
-        bottom: -$offset;
-        transform: translate(-50%, calc($arrow-outline-width + $border-width));
-    }
+  &::after {
+    border-bottom: $arrow-style;
+    bottom: -$offset;
+    transform: translate(-50%, calc($arrow-outline-width + $border-width));
+  }
 
-    @extend %tooltip-arrow-vertical;
+  @extend %tooltip-arrow-vertical;
 }
 
 %tooltip-arrow-horizontal {
-    border-bottom: $arrow-outline-transparent-style;
-    border-top: $arrow-outline-transparent-style;
+  border-bottom: $arrow-outline-transparent-style;
+  border-top: $arrow-outline-transparent-style;
 
-    &::before {
-        border-bottom: $arrow-border-transparent-style;
-        border-top: $arrow-border-transparent-style;
-        content: "";
-        position: absolute;
-    }
+  &::before {
+    border-bottom: $arrow-border-transparent-style;
+    border-top: $arrow-border-transparent-style;
+    content: "";
+    position: absolute;
+  }
 
-    &::after {
-        border-bottom: $arrow-transparent-style;
-        border-top: $arrow-transparent-style;
-        content: "";
-        position: absolute;
-    }
+  &::after {
+    border-bottom: $arrow-transparent-style;
+    border-top: $arrow-transparent-style;
+    content: "";
+    position: absolute;
+  }
 }
 
 %tooltip-arrow-left {
-    border-right: $arrow-outline-style;
-    transform: translateX(-100%);
+  border-right: $arrow-outline-style;
+  transform: translateX(-100%);
 
-    &::before {
-        border-right: $arrow-border-style;
-        right: -$offset;
-        transform: translate($arrow-outline-width, -50%);
-    }
+  &::before {
+    border-right: $arrow-border-style;
+    right: -$offset;
+    transform: translate($arrow-outline-width, -50%);
+  }
 
-    &::after {
-        border-right: $arrow-style;
-        right: -$offset;
-        transform: translate(calc($arrow-outline-width + $border-width), -50%);
-    }
+  &::after {
+    border-right: $arrow-style;
+    right: -$offset;
+    transform: translate(calc($arrow-outline-width + $border-width), -50%);
+  }
 
-    @extend %tooltip-arrow-horizontal;
+  @extend %tooltip-arrow-horizontal;
 }
 
 %tooltip-arrow-right {
-    border-left: $arrow-outline-style;
-    transform: translateX(100%);
+  border-left: $arrow-outline-style;
+  transform: translateX(100%);
 
-    &::before {
-        border-left: $arrow-border-style;
-        left: -$offset;
-        transform: translate(calc(-1 * $arrow-outline-width), -50%);
-    }
+  &::before {
+    border-left: $arrow-border-style;
+    left: -$offset;
+    transform: translate(calc(-1 * $arrow-outline-width), -50%);
+  }
 
-    &::after {
-        border-left: $arrow-style;
-        left: -$offset;
-        transform: translate(calc(-1 * $arrow-outline-width - $border-width), -50%);
-    }
+  &::after {
+    border-left: $arrow-style;
+    left: -$offset;
+    transform: translate(calc(-1 * $arrow-outline-width - $border-width), -50%);
+  }
 
-    @extend %tooltip-arrow-horizontal;
+  @extend %tooltip-arrow-horizontal;
 }
 
 .pixel-tooltip {
-    display: inline-flex;
-    margin: calc($arrow-outline-width + var(--margin));
-    position: relative;
-    
-    &__wrapper {
-        background-color: var(--primary-colour);
-        border: $border-width solid variables.$black;
-        border-radius: 0.5rem;
-        box-shadow: 0.2rem 0.2rem 1rem variables.$black;
-        outline: $outline-width solid variables.$white;
-        padding: 1rem 1.5rem;
+  display: inline-flex;
+  margin: calc($arrow-outline-width + var(--margin));
+  position: relative;
+
+  &__wrapper {
+    background-color: var(--primary-colour);
+    border: $border-width solid variables.$black;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem variables.$black;
+    outline: $outline-width solid variables.$white;
+    padding: 1rem 1.5rem;
+  }
+
+  &__arrow {
+    position: absolute;
+
+    &--top {
+      bottom: 0;
+      left: calc(50% - $arrow-outline-width);
+
+      @extend %tooltip-arrow-bottom;
     }
 
-    &__arrow {
-        position: absolute;
+    &--top-left {
+      bottom: 0;
+      right: $offset;
 
-        &--top {
-            bottom: 0;
-            left: calc(50% - $arrow-outline-width);
-
-            @extend %tooltip-arrow-bottom;
-        }
-
-        &--top-left {
-            bottom: 0;
-            right: $offset;
-
-            @extend %tooltip-arrow-bottom;
-        }
-
-        &--top-right {
-            bottom: 0;
-            left: $offset;
-
-            @extend %tooltip-arrow-bottom;
-        }
-
-        &--bottom {
-            left: calc(50% - $arrow-outline-width);
-            top: 0;
-
-            @extend %tooltip-arrow-top;
-        }
-
-        &--bottom-left {
-            right: $offset;
-            top: 0;
-
-            @extend %tooltip-arrow-top;
-        }
-
-        &--bottom-right {
-            left: $offset;
-            top: 0;
-
-            @extend %tooltip-arrow-top;
-        }
-
-        &--left {
-            right: 0;
-            top: calc(50% - $arrow-outline-width);
-
-            @extend %tooltip-arrow-right;
-        }
-
-        &--right {
-            left: 0;
-            top: calc(50% - $arrow-outline-width);
-
-            @extend %tooltip-arrow-left;
-        }
+      @extend %tooltip-arrow-bottom;
     }
+
+    &--top-right {
+      bottom: 0;
+      left: $offset;
+
+      @extend %tooltip-arrow-bottom;
+    }
+
+    &--bottom {
+      left: calc(50% - $arrow-outline-width);
+      top: 0;
+
+      @extend %tooltip-arrow-top;
+    }
+
+    &--bottom-left {
+      right: $offset;
+      top: 0;
+
+      @extend %tooltip-arrow-top;
+    }
+
+    &--bottom-right {
+      left: $offset;
+      top: 0;
+
+      @extend %tooltip-arrow-top;
+    }
+
+    &--left {
+      right: 0;
+      top: calc(50% - $arrow-outline-width);
+
+      @extend %tooltip-arrow-right;
+    }
+
+    &--right {
+      left: 0;
+      top: calc(50% - $arrow-outline-width);
+
+      @extend %tooltip-arrow-left;
+    }
+  }
 }
