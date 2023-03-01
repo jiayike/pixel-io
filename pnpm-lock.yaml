@@ -47,7 +47,6 @@ importers:
       '@open-wc/lit-helpers': ^0.5.1
       '@open-wc/testing-helpers': ^2.1.4
       '@pixel-io/styles': workspace:*
-      '@testing-library/dom': ^9.0.0
       '@testing-library/user-event': ^14.4.3
       '@typescript-eslint/eslint-plugin': ^5.53.0
       '@typescript-eslint/parser': ^5.53.0
@@ -58,6 +57,7 @@ importers:
       lit: ^2.6.1
       prettier: ^2.8.4
       sass: ^1.58.3
+      shadow-dom-testing-library: ^1.10.0
       typescript: ^4.9.5
       vite: ^4.1.4
       vitest: ^0.29.1
@@ -67,7 +67,6 @@ importers:
     devDependencies:
       '@open-wc/lit-helpers': 0.5.1_lit@2.6.1
       '@open-wc/testing-helpers': 2.1.4
-      '@testing-library/dom': 9.0.0
       '@testing-library/user-event': 14.4.3_@testing-library+dom@9.0.0
       '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
       '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
@@ -77,6 +76,7 @@ importers:
       jsdom: 21.1.0
       prettier: 2.8.4
       sass: 1.58.3
+      shadow-dom-testing-library: 1.10.0_@testing-library+dom@9.0.0
       typescript: 4.9.5
       vite: 4.1.4_sass@1.58.3
       vitest: 0.29.1_jsdom@21.1.0+sass@1.58.3
@@ -7999,6 +7999,15 @@ packages:
 
   /setprototypeof/1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
+    dev: true
+
+  /shadow-dom-testing-library/1.10.0_@testing-library+dom@9.0.0:
+    resolution: {integrity: sha512-b1Hs5scPfEy6WsTL6CIhPS5suo0lFAkoGBe0tYW83Shcr0CcJuI7haDS40NoUlQo8pUUR+zAhXLiwbDsWZ0/xg==}
+    engines: {node: '>= 14', npm: '>= 7'}
+    peerDependencies:
+      '@testing-library/dom': '>= 8'
+    dependencies:
+      '@testing-library/dom': 9.0.0
     dev: true
 
   /shallow-clone/3.0.1:
