@@ -3,14 +3,15 @@ import { html } from 'lit';
 
 <Meta title="Atoms/Button" />
 
-export const Template = ({ content, ...args }) => html`<button class="${args.class}">${content}</button>`;
+export const Template = ({ content, ...args }) =>
+  html`<button class="pixel-button pixel-button--${args.type}">${content}</button>`;
 
 # Button
 
 ## Primary Button
 
 <Canvas>
-  <Story name="Primary" args={{ class: 'pixel-button pixel-button__primary', content: 'Primary Button' }}>
+  <Story name="Primary" args={{ type: 'primary', content: 'Primary Button' }}>
     {Template.bind()}
   </Story>
 </Canvas>
@@ -18,7 +19,7 @@ export const Template = ({ content, ...args }) => html`<button class="${args.cla
 ## Secondary Button
 
 <Canvas>
-  <Story name="Secondary" args={{ class: 'pixel-button pixel-button__secondary', content: 'Secondary Button' }}>
+  <Story name="Secondary" args={{ type: 'secondary', content: 'Secondary Button' }}>
     {Template.bind()}
   </Story>
 </Canvas>

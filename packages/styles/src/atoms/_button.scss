@@ -13,11 +13,11 @@
     filter: brightness(90%);
   }
 
-  &__primary {
+  &--primary {
     background-color: var(--primary-colour);
   }
 
-  &__secondary {
+  &--secondary {
     background-color: var(--secondary-colour);
   }
 }
