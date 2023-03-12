@@ -17,10 +17,10 @@
     "build": "tsc && vite build",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
-    "format": "prettier --write ./src/**/*.{js,html,ts,scss,css,mdx}",
-    "lint": "eslint ./src/**/*.{js,ts}",
-    "lint:fix": "pnpm lint --fix",
-    "check": "pnpm format && pnpm lint:fix"
+    "check": "pnpm check:lint && pnpm check:format",
+    "check:lint": "eslint ./src/**/*.{js,ts}",
+    "check:format": "prettier --list-different ./src/**/*.{js,html,ts,scss,css,mdx}",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "@pixel-io/styles": "workspace:*",
@@ -36,6 +36,7 @@
     "eslint": "^8.36.0",
     "eslint-plugin-lit": "^1.8.2",
     "jsdom": "^21.1.1",
+    "lint-staged": "^13.2.0",
     "prettier": "^2.8.4",
     "sass": "^1.59.2",
     "shadow-dom-testing-library": "^1.10.0",
