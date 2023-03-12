@@ -26,5 +26,6 @@ export const parameters = {
   },
   docs: {
     theme,
+    source: { language: "html", format: "dedent" },
   },
 };
