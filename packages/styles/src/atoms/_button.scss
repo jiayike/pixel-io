@@ -1,12 +1,10 @@
-@use "../abstracts/variables";
-
 .pixel-button {
-  border: var(--border-width) solid variables.$black;
+  border: var(--border-width) solid var(--pixel-color-black);
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.2rem 1rem variables.$black;
+  box-shadow: 0.2rem 0.2rem 1rem var(--pixel-color-black);
   cursor: pointer;
   margin: calc(var(--outline-width) + var(--margin));
-  outline: var(--outline-width) solid variables.$white;
+  outline: var(--outline-width) solid var(--pixel-color-white);
   padding: 1rem 1.5rem;
 
   &:hover {

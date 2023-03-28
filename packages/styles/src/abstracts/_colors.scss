@@ -1,0 +1,10 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+$color-prefix: variables.$css-variable-prefix + "color-";
+$colors: (
+  white: #fff,
+  black: #000,
+);
+
+@include mixins.generate-css-variables($colors, $color-prefix);

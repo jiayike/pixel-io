@@ -1,0 +1,7 @@
+@mixin generate-css-variables($variables, $prefix: "") {
+  :root {
+    @each $name, $variable in $variables {
+      #{$prefix}#{"" + $name}: $variable;
+    }
+  }
+}
