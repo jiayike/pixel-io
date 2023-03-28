@@ -1,5 +1,3 @@
-@use "../abstracts/variables";
-
 $arrow-size: 0.8rem;
 $border-width: var(--border-width);
 $outline-width: var(--outline-width);
@@ -12,11 +10,11 @@ $arrow-outline-width: calc($arrow-border-width + $outline-width);
 
 // arrow styles
 $arrow-transparent-style: $arrow-width solid transparent;
-$arrow-style: $arrow-width solid var(--primary-colour);
+$arrow-style: $arrow-width solid var(--primary-color);
 $arrow-border-transparent-style: $arrow-border-width solid transparent;
-$arrow-border-style: $arrow-border-width solid variables.$black;
+$arrow-border-style: $arrow-border-width solid var(--pixel-color-black);
 $arrow-outline-transparent-style: $arrow-outline-width solid transparent;
-$arrow-outline-style: $arrow-outline-width solid variables.$white;
+$arrow-outline-style: $arrow-outline-width solid var(--pixel-color-white);
 
 %tooltip-arrow-vertical {
   border-left: $arrow-outline-transparent-style;
@@ -138,11 +136,12 @@ $arrow-outline-style: $arrow-outline-width solid variables.$white;
   position: relative;
 
   &__wrapper {
-    background-color: var(--primary-colour);
-    border: $border-width solid variables.$black;
+    background-color: var(--primary-color);
+    border: $border-width solid var(--pixel-color-black);
     border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 1rem variables.$black;
-    outline: $outline-width solid variables.$white;
+    box-shadow: 0.2rem 0.2rem 1rem var(--pixel-color-black);
+    inline-size: fit-content;
+    outline: $outline-width solid var(--pixel-color-white);
     padding: 1rem 1.5rem;
   }
 
