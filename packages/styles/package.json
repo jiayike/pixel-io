@@ -21,7 +21,7 @@
     "check": "pnpm check:lint && pnpm check:stylelint && pnpm check:format",
     "check:lint": "eslint ./src/**/*.{js,ts}",
     "check:stylelint": "stylelint ./src/**/*.scss",
-    "check:format": "prettier --list-different ./src/**/*.{js,html,ts,scss,css,mdx}",
+    "check:format": "prettier --check ./src/**/*.{js,html,ts,scss,css,mdx}",
     "pre-commit": "lint-staged"
   },
   "devDependencies": {
@@ -35,8 +35,6 @@
     "stylelint": "^15.3.0",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-order": "^6.0.3",
-    "stylelint-prettier": "^3.0.0",
-    "stylelint-scss": "^4.6.0",
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
     "vite-plugin-stylelint": "^4.3.0"

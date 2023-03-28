@@ -96,8 +96,6 @@ importers:
       stylelint: ^15.3.0
       stylelint-config-standard-scss: ^7.0.1
       stylelint-order: ^6.0.3
-      stylelint-prettier: ^3.0.0
-      stylelint-scss: ^4.6.0
       typescript: ^5.0.2
       vite: ^4.2.1
       vite-plugin-stylelint: ^4.3.0
@@ -114,8 +112,6 @@ importers:
       stylelint: 15.3.0
       stylelint-config-standard-scss: 7.0.1_xd434hbhlikjpobg3rgppuzh3e
       stylelint-order: 6.0.3_stylelint@15.3.0
-      stylelint-prettier: 3.0.0_6i4typnqotoqmooak3ignv77xy
-      stylelint-scss: 4.6.0_stylelint@15.3.0
       typescript: 5.0.2
       vite: 4.2.1_sass@1.60.0
       vite-plugin-stylelint: 4.3.0_n634kb2woylq7eya2ex4eeex7q
@@ -4968,10 +4964,6 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /fast-diff/1.2.0:
-    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
-    dev: true
-
   /fast-glob/3.2.12:
     resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
     engines: {node: '>=8.6.0'}
@@ -7321,13 +7313,6 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-linter-helpers/1.0.0:
-    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      fast-diff: 1.2.0
-    dev: true
-
   /prettier/2.8.7:
     resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
     engines: {node: '>=10.13.0'}
@@ -8257,18 +8242,6 @@ packages:
     dependencies:
       postcss: 8.4.21
       postcss-sorting: 8.0.2_postcss@8.4.21
-      stylelint: 15.3.0
-    dev: true
-
-  /stylelint-prettier/3.0.0_6i4typnqotoqmooak3ignv77xy:
-    resolution: {integrity: sha512-kIks1xw6np0zElokMT2kP6ar3S4MBoj6vUtPJuND1pFELMpZxVS/0uHPR4HDAVn0WAD3I5oF0IA3qBFxBpMkLg==}
-    engines: {node: ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      prettier: '>=2.0.0'
-      stylelint: '>=14.0.0'
-    dependencies:
-      prettier: 2.8.7
-      prettier-linter-helpers: 1.0.0
       stylelint: 15.3.0
     dev: true
 

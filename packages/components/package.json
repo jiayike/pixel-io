@@ -19,7 +19,7 @@
     "test:watch": "vitest",
     "check": "pnpm check:lint && pnpm check:format",
     "check:lint": "eslint ./src/**/*.{js,ts}",
-    "check:format": "prettier --list-different ./src/**/*.{js,html,ts,scss,css,mdx}",
+    "check:format": "prettier --check ./src/**/*.{js,html,ts,scss,css,mdx}",
     "pre-commit": "lint-staged"
   },
   "dependencies": {
