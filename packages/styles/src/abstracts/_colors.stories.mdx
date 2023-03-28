@@ -1,0 +1,61 @@
+import { Meta, Canvas, Story } from '@storybook/blocks';
+import { html } from 'lit';
+
+<Meta title="Base/Colors" />
+
+export const Template = () => {
+  const colors = [
+    ['white', 'black'],
+    ['black', 'white'],
+    ['red', 'white'],
+    ['pink', 'white'],
+    ['purple', 'white'],
+    ['deep-purple', 'white'],
+    ['indigo', 'white'],
+    ['blue', 'white'],
+    ['light-blue', 'white'],
+    ['cyan', 'black'],
+    ['teal', 'white'],
+    ['green', 'white'],
+    ['light-green', 'black'],
+    ['lime', 'black'],
+    ['yellow', 'black'],
+    ['amber', 'black'],
+    ['orange', 'black'],
+    ['deep-orange', 'white'],
+    ['brown', 'white'],
+    ['blue-grey', 'white'],
+    ['grey', 'white'],
+  ];
+  return html`<div style="display: grid; grid-gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));">
+    ${colors.map(([bgColor, textColor]) => {
+      const variableName = `--pixel-color-${bgColor}`;
+      const colorHex = getComputedStyle(document.documentElement).getPropertyValue(variableName);
+      return html`<div
+        style="background-color: var(${variableName}); color: ${textColor}; 
+        display: flex; flex-direction: column; justify-content: space-between; 
+        min-height: 10rem; padding: 0.8rem;"
+      >
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.8rem;">
+          <span>${bgColor}</span>
+          <span>${colorHex}</span>
+        </div>
+        <code><small>css variable: ${variableName}</small></code>
+      </div>`;
+    })}
+  </div>`;
+};
+
+# Colors
+
+## Available colors
+
+The colors are prefixed with `--pixel-color`. To use colors, append the prefix with the color name. For e.g.:
+
+```css
+color: var(--pixel-color-red);
+```
+
+<Canvas>
+  <Story name="Colors">{Template.bind()}</Story>
+</Canvas>
