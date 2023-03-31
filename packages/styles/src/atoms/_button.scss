@@ -13,9 +13,11 @@
 
   &--primary {
     background-color: var(--pixel-primary-color);
+    color: var(--pixel-primary-text-color);
   }
 
   &--secondary {
     background-color: var(--pixel-secondary-color);
+    color: var(--pixel-secondary-text-color);
   }
 }

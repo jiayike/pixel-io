@@ -2,8 +2,12 @@
 
 @mixin generate-css-variables($variables, $prefix: variables.$css-variable-prefix) {
   :root {
-    @each $name, $variable in $variables {
-      #{$prefix}#{"" + $name}: $variable;
+    @each $variable-name, $value in $variables {
+      @include css-variable-with-prefix($variable-name, $value, $prefix);
     }
   }
+}
+
+@mixin css-variable-with-prefix($variable-name, $value, $prefix: variables.$css-variable-prefix) {
+  #{$prefix}#{"" + $variable-name}: $value;
 }
