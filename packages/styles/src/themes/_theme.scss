@@ -1,7 +1,13 @@
-:root {
-  --primary-color: #dea057;
-  --secondary-color: #ce9461;
-  --border-width: 0.5rem;
-  --outline-width: 0.3rem;
-  --margin: 0.5rem;
-}
+@use "../abstracts/mixins";
+
+$default-theme: (
+  primary-color: var(--pixel-color-white),
+  secondary-color: var(--pixel-color-grey),
+  border-width: 0.5rem,
+  border-color: var(--pixel-color-black),
+  outline-width: 0.3rem,
+  outline-color: var(--pixel-color-white),
+  margin: 0.5rem,
+);
+
+@include mixins.generate-css-variables($default-theme);

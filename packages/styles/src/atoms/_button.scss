@@ -1,10 +1,10 @@
 .pixel-button {
-  border: var(--border-width) solid var(--pixel-color-black);
+  border: var(--pixel-border-width) solid var(--pixel-border-color);
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.2rem 1rem var(--pixel-color-black);
+  box-shadow: 0.2rem 0.2rem 1rem var(--pixel-border-color);
   cursor: pointer;
-  margin: calc(var(--outline-width) + var(--margin));
-  outline: var(--outline-width) solid var(--pixel-color-white);
+  margin: calc(var(--pixel-outline-width) + var(--pixel-margin));
+  outline: var(--pixel-outline-width) solid var(--pixel-outline-color);
   padding: 1rem 1.5rem;
 
   &:hover {
@@ -12,10 +12,10 @@
   }
 
   &--primary {
-    background-color: var(--primary-color);
+    background-color: var(--pixel-primary-color);
   }
 
   &--secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--pixel-secondary-color);
   }
 }
