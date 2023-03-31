@@ -9,7 +9,14 @@ export const parameters = {
     storySort: {
       order: [
         "HTML|CSS",
-        ["Quick Start", "Changelog", "Atoms", "Molecules", "Organisms"],
+        [
+          "Quick Start",
+          "Changelog",
+          "Customization",
+          "Atoms",
+          "Molecules",
+          "Organisms",
+        ],
         "Components",
         ["Quick Start", "Changelog", "Atoms", "Molecules", "Organisms"],
         "*",
