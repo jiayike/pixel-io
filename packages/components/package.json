@@ -24,14 +24,14 @@
   },
   "dependencies": {
     "@pixel-io/styles": "workspace:*",
-    "lit": "^2.7.0"
+    "lit": "^2.7.2"
   },
   "devDependencies": {
     "@open-wc/lit-helpers": "^0.5.1",
     "@open-wc/testing-helpers": "^2.2.0",
     "@testing-library/user-event": "^14.4.3",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
     "@vitest/coverage-c8": "^0.29.8",
     "eslint": "^8.37.0",
     "eslint-plugin-lit": "^1.8.2",
