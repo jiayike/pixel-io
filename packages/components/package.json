@@ -27,10 +27,11 @@
     "lit": "^2.7.2"
   },
   "devDependencies": {
-    "@pixel-io/eslint-config": "workspace:*",
-    "@pixel-io/prettier-config": "workspace:*",
     "@open-wc/lit-helpers": "^0.5.1",
     "@open-wc/testing-helpers": "^2.2.1",
+    "@pixel-io/eslint-config": "workspace:*",
+    "@pixel-io/prettier-config": "workspace:*",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^14.4.3",
     "@vitest/coverage-c8": "^0.30.1",
     "eslint": "^8.38.0",

@@ -13,7 +13,7 @@ describe('PixelButton', () => {
     const content = 'content';
     await fixture(html`<pixel-button>${content}</pixel-button>`);
 
-    expect(screen.getByText(content)).toBeDefined();
+    expect(screen.getByText(content)).toBeInTheDocument();
   });
 
   it('should call on click', async () => {

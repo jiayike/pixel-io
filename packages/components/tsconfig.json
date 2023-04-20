@@ -18,7 +18,7 @@
     "useDefineForClassFields": false,
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "vite.config.ts", ".eslintrc.cjs"],
+  "include": ["src/**/*.ts", "vite.config.ts", ".eslintrc.cjs", "vitest-setup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
   "extends": "./tsconfig.test.json"
 }
