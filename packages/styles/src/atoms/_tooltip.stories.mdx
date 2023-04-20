@@ -14,7 +14,7 @@ export const Template = ({ content, margin = '10rem', ...args }) => {
   return html`<div class="pixel-tooltip-container" style="margin-${args.position.split('-')[0]}: ${margin};">
     <div class="pixel-tooltip pixel-tooltip--${args.position}">
       <div class="pixel-tooltip__arrow pixel-tooltip__arrow--${args.position}"></div>
-      <div class="pixel-tooltip__wrapper">tooltip content</div>
+      <div class="pixel-tooltip__wrapper">Tooltip Content</div>
     </div>
     <button class="pixel-button" @mouseover=${onMouseover} @mouseout=${onMouseout}>${content} Tooltip</button>
   </div>`;
