@@ -1,16 +1,5 @@
 # Changelog
 
-## [0.3.0](https://github.com/jiayike/pixel-io/compare/components-v0.2.1...components-v0.3.0) (2023-04-20)
-
-
-### ⚠ BREAKING CHANGES
-
-* change pixel-button__<type> to pixel-button--<type>
-
-### Styles
-
-* change button type class ([c027e6e](https://github.com/jiayike/pixel-io/commit/c027e6ebe87158969044db033045df6836526999))
-
 ## [0.2.1](https://github.com/jiayike/pixel-io/compare/components-v0.2.0...components-v0.2.1) (2023-02-01)
 
 

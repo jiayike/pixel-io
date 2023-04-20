@@ -1,34 +1,5 @@
 # Changelog
 
-## [0.3.0](https://github.com/jiayike/pixel-io/compare/styles-v0.2.1...styles-v0.3.0) (2023-04-20)
-
-
-### ⚠ BREAKING CHANGES
-
-* replace theme css variable name
-* change pixel-button__<type> to pixel-button--<type>
-
-### Features
-
-* add primary and secondary text color css var ([503fc32](https://github.com/jiayike/pixel-io/commit/503fc320d8e114ed3268143a84f480287c69ee1a))
-* allow custom border and outline width, margin ([d2fa7ac](https://github.com/jiayike/pixel-io/commit/d2fa7ac8537df7faf1820fd8a2b74f573a842f6d))
-* tooltip bottom, left and right ([84af8de](https://github.com/jiayike/pixel-io/commit/84af8de9d5d8cd34c5f07b08c1572d14c7f53c27))
-
-
-### Bug Fixes
-
-* use correct css variable for tooltip ([9d10e6c](https://github.com/jiayike/pixel-io/commit/9d10e6c7262c527795a25253f57ffdb1185ed4df))
-
-
-### Styles
-
-* change button type class ([c027e6e](https://github.com/jiayike/pixel-io/commit/c027e6ebe87158969044db033045df6836526999))
-
-
-### Code Refactoring
-
-* replace theme css variable name ([c810fa0](https://github.com/jiayike/pixel-io/commit/c810fa0a402057abd11ad9ada1da919a7ff72ea6))
-
 ## [0.2.1](https://github.com/jiayike/pixel-io/compare/styles-v0.2.0...styles-v0.2.1) (2023-02-01)
 
 
