@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm --parallel pre-commit
+# issues with parallel lint-staged https://github.com/okonet/lint-staged/issues/929
+pnpm --parallel --workspace-concurrency=1 pre-commit

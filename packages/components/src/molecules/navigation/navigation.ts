@@ -16,7 +16,7 @@ export class PixelNavigation extends LitElement {
     return html`
       <nav class="pixel-navigation">
         <div class="pixel-navigation__wrapper">
-          <slot />
+          <slot></slot>
         </div>
       </nav>
     `;

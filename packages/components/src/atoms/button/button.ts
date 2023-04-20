@@ -59,7 +59,7 @@ export class PixelButton extends LitElement {
   render(): TemplateResult {
     return html`
       <button class="pixel-button pixel-button--${this.type} ${this.getAnimationClasses()}" @click=${this.onClick}>
-        <slot />
+        <slot></slot>
       </button>
     `;
   }
