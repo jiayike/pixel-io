@@ -1,6 +1,6 @@
 $arrow-size: 0.8rem;
-$border-width: var(--border-width);
-$outline-width: var(--outline-width);
+$border-width: var(--pixel-border-width);
+$outline-width: var(--pixel-outline-width);
 
 // arrow sizes
 $offset: 0.1rem;
@@ -10,11 +10,11 @@ $arrow-outline-width: calc($arrow-border-width + $outline-width);
 
 // arrow styles
 $arrow-transparent-style: $arrow-width solid transparent;
-$arrow-style: $arrow-width solid var(--primary-color);
+$arrow-style: $arrow-width solid var(--pixel-primary-color);
 $arrow-border-transparent-style: $arrow-border-width solid transparent;
-$arrow-border-style: $arrow-border-width solid var(--pixel-color-black);
+$arrow-border-style: $arrow-border-width solid var(--pixel-border-color);
 $arrow-outline-transparent-style: $arrow-outline-width solid transparent;
-$arrow-outline-style: $arrow-outline-width solid var(--pixel-color-white);
+$arrow-outline-style: $arrow-outline-width solid var(--pixel-outline-color);
 
 %tooltip-arrow-vertical {
   border-left: $arrow-outline-transparent-style;
@@ -131,17 +131,44 @@ $arrow-outline-style: $arrow-outline-width solid var(--pixel-color-white);
 }
 
 .pixel-tooltip {
-  display: inline-flex;
-  margin: calc($arrow-outline-width + var(--margin));
-  position: relative;
+  display: none;
+  margin: calc($arrow-outline-width + var(--pixel-margin));
+  position: absolute;
+
+  &-container {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &--show {
+    display: inline-flex;
+  }
+
+  &--top {
+    bottom: 100%;
+  }
+
+  &--bottom {
+    top: 100%;
+  }
+
+  &--left {
+    right: 100%;
+  }
+
+  &--right {
+    left: 100%;
+  }
 
   &__wrapper {
-    background-color: var(--primary-color);
-    border: $border-width solid var(--pixel-color-black);
+    background-color: var(--pixel-primary-color);
+    border: $border-width solid var(--pixel-border-color);
     border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 1rem var(--pixel-color-black);
+    box-shadow: 0.2rem 0.2rem 1rem var(--pixel-border-color);
     inline-size: fit-content;
-    outline: $outline-width solid var(--pixel-color-white);
+    outline: $outline-width solid var(--pixel-outline-color);
     padding: 1rem 1.5rem;
   }
 
@@ -155,36 +182,8 @@ $arrow-outline-style: $arrow-outline-width solid var(--pixel-color-white);
       @extend %tooltip-arrow-bottom;
     }
 
-    &--top-left {
-      bottom: 0;
-      right: $offset;
-
-      @extend %tooltip-arrow-bottom;
-    }
-
-    &--top-right {
-      bottom: 0;
-      left: $offset;
-
-      @extend %tooltip-arrow-bottom;
-    }
-
     &--bottom {
       left: calc(50% - $arrow-outline-width);
-      top: 0;
-
-      @extend %tooltip-arrow-top;
-    }
-
-    &--bottom-left {
-      right: $offset;
-      top: 0;
-
-      @extend %tooltip-arrow-top;
-    }
-
-    &--bottom-right {
-      left: $offset;
       top: 0;
 
       @extend %tooltip-arrow-top;

@@ -3,61 +3,45 @@ import { html } from 'lit';
 
 <Meta title="Atoms/Tooltip" />
 
-export const Template = ({ content, ...args }) => html`
-  <div class="pixel-tooltip">
-    <div class="pixel-tooltip__arrow ${args.class}"></div>
-    <div class="pixel-tooltip__wrapper">${content}</div>
-  </div>
-`;
+export const Template = ({ content, margin = '10rem', ...args }) => {
+  const getTooltip = (evt) => evt.srcElement.parentElement.querySelector('.pixel-tooltip');
+  const onMouseover = (evt) => {
+    getTooltip(evt).classList.add('pixel-tooltip--show');
+  };
+  const onMouseout = (evt) => {
+    getTooltip(evt).classList.remove('pixel-tooltip--show');
+  };
+  return html`<div class="pixel-tooltip-container" style="margin-${args.position.split('-')[0]}: ${margin};">
+    <div class="pixel-tooltip pixel-tooltip--${args.position}">
+      <div class="pixel-tooltip__arrow pixel-tooltip__arrow--${args.position}"></div>
+      <div class="pixel-tooltip__wrapper">tooltip content</div>
+    </div>
+    <button class="pixel-button" @mouseover=${onMouseover} @mouseout=${onMouseout}>${content} Tooltip</button>
+  </div>`;
+};
 
 # Tooltip
-
-## Tooltip
-
-<Canvas>
-  <Story name="Default">{Template({ content: 'Tooltip', class: 'pixel-tooltip__arrow--top' })}</Story>
-</Canvas>
 
 ## Top Tooltip
 
 <Canvas>
-  <Story name="Top">
-    {html`<div>
-      ${Template({
-        content: 'Top Left',
-        class: 'pixel-tooltip__arrow--top-left',
-      })} ${Template({ content: 'Top Middle', class: 'pixel-tooltip__arrow--top' })} ${Template({
-        content: 'Top Right',
-        class: 'pixel-tooltip__arrow--top-right',
-      })}
-    </div>`}
-  </Story>
+  <Story name="Top">{Template({ content: 'Top', position: 'top' })}</Story>
 </Canvas>
 
 ## Bottom Tooltip
 
 <Canvas>
-  <Story name="Bottom">
-    {html`<div>
-      ${Template({
-        content: 'Bottom Left',
-        class: 'pixel-tooltip__arrow--bottom-left',
-      })} ${Template({ content: 'Bottom Middle', class: 'pixel-tooltip__arrow--bottom' })} ${Template({
-        content: 'Bottom Right',
-        class: 'pixel-tooltip__arrow--bottom-right',
-      })}
-    </div>`}
-  </Story>
+  <Story name="Bottom">{Template({ content: 'Bottom', position: 'bottom' })}</Story>
 </Canvas>
 
 ## Left Tooltip
 
 <Canvas>
-  <Story name="Left">{Template({ content: 'Left', class: 'pixel-tooltip__arrow--left' })}</Story>
+  <Story name="Left">{Template({ content: 'Left', position: 'left', margin: '15rem' })}</Story>
 </Canvas>
 
 ## Right Tooltip
 
 <Canvas>
-  <Story name="Right">{Template({ content: 'Right', class: 'pixel-tooltip__arrow--right' })}</Story>
+  <Story name="Right">{Template({ content: 'Right', position: 'right' })}</Story>
 </Canvas>
