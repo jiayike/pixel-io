@@ -4,6 +4,8 @@
   "plugins": [],
   "packages": {
     "packages/components": {},
-    "packages/styles": {}
+    "packages/styles": {},
+    "packages/eslint-config": {},
+    "packages/prettier-config": {}
   }
 }
