@@ -1,0 +1,9 @@
+{
+  "name": "@pixel-io/prettier-config",
+  "version": "0.0.1",
+  "main": "index.json",
+  "scripts": {},
+  "peerDependencies": {
+    "prettier": "^2.8.7"
+  }
+}

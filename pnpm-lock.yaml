@@ -47,6 +47,7 @@ importers:
       '@open-wc/lit-helpers': ^0.5.1
       '@open-wc/testing-helpers': ^2.2.1
       '@pixel-io/eslint-config': workspace:*
+      '@pixel-io/prettier-config': workspace:*
       '@pixel-io/styles': workspace:*
       '@testing-library/user-event': ^14.4.3
       '@vitest/coverage-c8': ^0.30.1
@@ -68,6 +69,7 @@ importers:
       '@open-wc/lit-helpers': 0.5.1_lit@2.7.2
       '@open-wc/testing-helpers': 2.2.1
       '@pixel-io/eslint-config': link:../eslint-config
+      '@pixel-io/prettier-config': link:../prettier-config
       '@testing-library/user-event': 14.4.3_@testing-library+dom@9.2.0
       '@vitest/coverage-c8': 0.30.1_vitest@0.30.1
       eslint: 8.38.0
@@ -93,9 +95,16 @@ importers:
       eslint: 8.38.0
       typescript: 5.0.4
 
+  packages/prettier-config:
+    specifiers:
+      prettier: ^2.8.7
+    dependencies:
+      prettier: 2.8.7
+
   packages/styles:
     specifiers:
       '@pixel-io/eslint-config': workspace:*
+      '@pixel-io/prettier-config': workspace:*
       eslint: ^8.38.0
       lint-staged: ^13.2.1
       normalize.css: ^8.0.1
@@ -112,6 +121,7 @@ importers:
       normalize.css: 8.0.1
     devDependencies:
       '@pixel-io/eslint-config': link:../eslint-config
+      '@pixel-io/prettier-config': link:../prettier-config
       eslint: 8.38.0
       lint-staged: 13.2.1
       postcss: 8.4.23
@@ -7275,7 +7285,6 @@ packages:
     resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: true
 
   /pretty-format/27.5.1:
     resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}

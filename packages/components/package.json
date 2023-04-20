@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@pixel-io/eslint-config": "workspace:*",
+    "@pixel-io/prettier-config": "workspace:*",
     "@open-wc/lit-helpers": "^0.5.1",
     "@open-wc/testing-helpers": "^2.2.1",
     "@testing-library/user-event": "^14.4.3",
