@@ -3,8 +3,12 @@
   "bump-patch-for-minor-pre-major": true,
   "plugins": [],
   "packages": {
-    "packages/components": {},
-    "packages/styles": {},
+    "packages/components": {
+      "last-release-sha": "3e4f6523949dd64dcf66d735e0fcf016cb53098a"
+    },
+    "packages/styles": {
+      "last-release-sha": "3e4f6523949dd64dcf66d735e0fcf016cb53098a"
+    },
     "packages/eslint-config": {},
     "packages/prettier-config": {}
   }
