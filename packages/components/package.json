@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@pixel-io/styles": "workspace:*",
-    "lit": "^2.7.2"
+    "lit": "^2.7.4"
   },
   "devDependencies": {
     "@open-wc/lit-helpers": "^0.5.1",
@@ -34,15 +34,15 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^14.4.3",
     "@vitest/coverage-c8": "^0.30.1",
-    "eslint": "^8.38.0",
+    "eslint": "^8.40.0",
     "eslint-plugin-lit": "^1.8.3",
-    "jsdom": "^21.1.1",
-    "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7",
-    "sass": "^1.62.0",
+    "jsdom": "^21.1.2",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
     "shadow-dom-testing-library": "^1.10.0",
     "typescript": "^5.0.4",
-    "vite": "^4.2.2",
+    "vite": "^4.3.5",
     "vitest": "^0.30.1"
   }
 }

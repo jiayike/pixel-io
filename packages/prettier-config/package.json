@@ -4,6 +4,9 @@
   "main": "index.json",
   "scripts": {},
   "peerDependencies": {
-    "prettier": "^2.8.7"
+    "prettier": ">= 2.8"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8"
   }
 }
