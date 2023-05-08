@@ -33,16 +33,16 @@
     "@pixel-io/prettier-config": "workspace:*",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/user-event": "^14.4.3",
-    "@vitest/coverage-c8": "^0.30.1",
+    "@vitest/coverage-c8": "^0.31.0",
     "eslint": "^8.40.0",
     "eslint-plugin-lit": "^1.8.3",
-    "jsdom": "^21.1.2",
+    "jsdom": "^22.0.0",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
     "shadow-dom-testing-library": "^1.10.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.5",
-    "vitest": "^0.30.1"
+    "vitest": "^0.31.0"
   }
 }
