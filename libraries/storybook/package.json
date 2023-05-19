@@ -15,14 +15,14 @@
   "devDependencies": {
     "@pixel-io/components": "workspace:*",
     "@pixel-io/styles": "workspace:*",
-    "@storybook/addon-essentials": "^7.0.9",
-    "@storybook/addon-links": "^7.0.9",
-    "@storybook/blocks": "^7.0.9",
-    "@storybook/web-components": "^7.0.9",
-    "@storybook/web-components-vite": "^7.0.9",
-    "lit-html": "^2.7.3",
+    "@storybook/addon-essentials": "^7.0.12",
+    "@storybook/addon-links": "^7.0.12",
+    "@storybook/blocks": "^7.0.12",
+    "@storybook/web-components": "^7.0.12",
+    "@storybook/web-components-vite": "^7.0.12",
+    "lit-html": "^2.7.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.0.9"
+    "storybook": "^7.0.12"
   }
 }
