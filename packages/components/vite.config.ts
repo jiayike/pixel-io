@@ -21,7 +21,7 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       all: true,
       include: ['src/**/*.ts'],
-      provider: 'c8',
+      provider: 'v8',
     },
   },
 });
