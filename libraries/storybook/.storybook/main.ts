@@ -2,23 +2,33 @@ import type { StorybookConfig } from "@storybook/web-components-vite";
 import type { StoriesEntry } from "@storybook/types";
 import { HmrOptions, InlineConfig, mergeConfig } from "vite";
 import * as path from "path";
-const storyPaths = [
-  ["HTML|CSS", path.resolve(__dirname, "../node_modules/@pixel-io/styles/src")],
-  [
-    "Components",
-    path.resolve(__dirname, "../node_modules/@pixel-io/components/src"),
-  ],
-];
 
-const findStories = (): StoriesEntry[] =>
-  storyPaths.map(([name, path]) => ({
+type titlePrefix = string;
+type directory = string;
+type StoryPathType = [titlePrefix, directory];
+
+const getStoriesEntry =
+  (files: string) =>
+  ([titlePrefix, directory]: StoryPathType): StoriesEntry => ({
     // 👇 The directory field sets the directory your stories
-    directory: path,
+    directory,
     // 👇 The titlePrefix field will generate automatic titles for your stories
-    titlePrefix: name,
+    titlePrefix,
     // 👇 Storybook will load all files that contain the stories extension
-    files: "**/*.stories.@(js|jsx|ts|tsx|mdx)",
-  }));
+    files,
+  });
+
+const findStories = (): StoriesEntry[] => {
+  const storyPaths: StoryPathType[] = [
+    ["HTML|CSS", path.resolve(__dirname, "../../../packages/styles/src")],
+    ["Components", path.resolve(__dirname, "../../../packages/components/src")],
+  ];
+
+  return [
+    ...storyPaths.map(getStoriesEntry("**/*.mdx")),
+    ...storyPaths.map(getStoriesEntry("**/*.stories.@(js|jsx|ts|tsx|mdx)")),
+  ];
+};
 
 const config: StorybookConfig = {
   stories: findStories(),
@@ -26,9 +36,6 @@ const config: StorybookConfig = {
   framework: {
     name: "@storybook/web-components-vite",
     options: {},
-  },
-  core: {
-    builder: "@storybook/builder-vite",
   },
   features: {
     storyStoreV7: true,
@@ -57,9 +64,6 @@ const config: StorybookConfig = {
             : true,
       },
     });
-  },
-  docs: {
-    autodocs: true,
   },
 };
 export default config;

@@ -18,7 +18,6 @@ importers:
 
   libraries/storybook:
     specifiers:
-      '@pixel-io/components': workspace:*
       '@pixel-io/styles': workspace:*
       '@storybook/addon-essentials': ^7.0.26
       '@storybook/addon-links': ^7.0.26
@@ -30,7 +29,6 @@ importers:
       react-dom: ^18.2.0
       storybook: ^7.0.26
     devDependencies:
-      '@pixel-io/components': link:../../packages/components
       '@pixel-io/styles': link:../../packages/styles
       '@storybook/addon-essentials': 7.0.26_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-links': 7.0.26_biqbaboplfbrettd7655fr4n2y
