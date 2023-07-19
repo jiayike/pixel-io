@@ -13,10 +13,9 @@ const meta: Meta<ArgTypes> = {
     type: {
       description: 'Style type of the button.',
       control: { type: 'select' },
-      options: ['primary', 'secondary'],
+      options: ['pixel-button--primary', 'pixel-button--secondary'],
       table: {
         type: { summary: 'string' },
-        defaultValue: { summary: 'primary' },
       },
     },
     content: {
@@ -24,7 +23,6 @@ const meta: Meta<ArgTypes> = {
       control: { type: 'text' },
       table: {
         type: { summary: 'string' },
-        defaultValue: { summary: 'Button' },
       },
     },
   },
@@ -34,7 +32,7 @@ const meta: Meta<ArgTypes> = {
     },
   },
   decorators: [withActions],
-  render: (args) => html`<button class="pixel-button pixel-button--${args.type}">${args.content}</button>`,
+  render: ({ type, content }) => html`<button class="pixel-button ${type}">${content}</button>`,
 };
 
 export default meta;
@@ -42,14 +40,14 @@ type Story = StoryObj;
 
 export const Primary: Story = {
   args: {
-    type: 'primary',
+    type: 'pixel-button--primary',
     content: 'Primary Button',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    type: 'secondary',
+    type: 'pixel-button--secondary',
     content: 'Secondary Button',
   },
 };
