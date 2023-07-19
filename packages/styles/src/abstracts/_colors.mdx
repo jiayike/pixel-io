@@ -1,0 +1,16 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as ColorStories from './_colors.stories';
+
+<Meta of={ColorStories} />
+
+# Colors
+
+## Available colors
+
+The colors are prefixed with `--pixel-color`. To use colors, append the prefix with the color name. For e.g.:
+
+```css
+color: var(--pixel-color-red);
+```
+
+<Canvas of={ColorStories.Colors} />
