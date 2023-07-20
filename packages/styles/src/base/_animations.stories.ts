@@ -26,6 +26,10 @@ const meta: Meta<ArgTypes> = {
       },
     },
   },
+  args: {
+    type: 'animate__slide-in',
+    delay: 'animate__delay-1',
+  },
   render: ({ type, delay }) =>
     html`<div style="background: white; padding: 1rem; display: inline-block;" class="${type} ${delay}">
       Pixel Animation
@@ -34,12 +38,7 @@ const meta: Meta<ArgTypes> = {
 
 export default meta;
 
-export const Animations: Story = {
-  args: {
-    type: 'animate__slide-in',
-    delay: 'animate__delay-1',
-  },
-};
+export const Animations: Story = {};
 
 export const WithAnimatedButtons: Story = {
   argTypes: {
@@ -58,7 +57,7 @@ export const WithAnimatedButtons: Story = {
     controls: { hideNoControlsWarning: true },
   },
   render: () =>
-    html`<nav class="pixel-navigation">
+    html`<nav class="pixel-navigation pixel-navigation--bottom">
       <div class="pixel-navigation__wrapper">
         <button class="pixel-button pixel-button--primary animate__slide-in">Home</button>
         <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-1">Content</button>
