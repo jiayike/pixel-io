@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
+import type { Meta, StoryObj as Story } from '@storybook/web-components';
 import { withActions } from '@storybook/addon-actions/decorator';
 import { html } from 'lit-html';
 
@@ -36,7 +36,6 @@ const meta: Meta<ArgTypes> = {
 };
 
 export default meta;
-type Story = StoryObj;
 
 export const Primary: Story = {
   args: {

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
+import type { Meta, StoryObj as Story } from '@storybook/web-components';
 import { html, TemplateResult } from 'lit-html';
 
 type BackgroundColor = string;
@@ -83,6 +83,5 @@ const meta: Meta = {
 };
 
 export default meta;
-type Story = StoryObj;
 
 export const Colors: Story = {};

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
+import type { Meta, StoryObj as Story } from '@storybook/web-components';
 import { html } from 'lit-html';
 
 interface ArgTypes {
@@ -33,7 +33,6 @@ const meta: Meta<ArgTypes> = {
 };
 
 export default meta;
-type Story = StoryObj;
 
 export const Animations: Story = {};
 
