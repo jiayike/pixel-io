@@ -12,7 +12,7 @@ const meta: Meta<ArgTypes> = {
     type: {
       description: 'Type of animation.',
       control: { type: 'select' },
-      options: ['animate__slide-in'],
+      options: ['', 'animate__slide-in'],
       table: {
         type: { summary: 'string' },
       },
@@ -34,7 +34,12 @@ const meta: Meta<ArgTypes> = {
 
 export default meta;
 
-export const Animations: Story = {};
+export const Animations: Story = {
+  args: {
+    type: 'animate__slide-in',
+    delay: 'animate__delay-1',
+  },
+};
 
 export const WithAnimatedButtons: Story = {
   argTypes: {
@@ -52,14 +57,14 @@ export const WithAnimatedButtons: Story = {
   parameters: {
     controls: { hideNoControlsWarning: true },
   },
-  render: () => `
-    <nav class="pixel-navigation">
-        <div class="pixel-navigation__wrapper">
-          <button class="pixel-button pixel-button--primary animate__slide-in">Home</button>
-          <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-1">Content</button>
-          <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-2">Stories</button>
-          <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-3">About Us</button>
-          <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-4">FAQ</button>
-        </div>
-      </nav>`,
+  render: () =>
+    html`<nav class="pixel-navigation">
+      <div class="pixel-navigation__wrapper">
+        <button class="pixel-button pixel-button--primary animate__slide-in">Home</button>
+        <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-1">Content</button>
+        <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-2">Stories</button>
+        <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-3">About Us</button>
+        <button class="pixel-button pixel-button--primary animate__slide-in animate__delay-4">FAQ</button>
+      </div>
+    </nav>`,
 };
