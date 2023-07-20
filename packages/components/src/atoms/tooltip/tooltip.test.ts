@@ -11,27 +11,31 @@ describe('PixelTooltip', () => {
 
   it('should not display tooltip on load', async () => {
     const content = 'content';
-    await fixture(html`<pixel-tooltip>
-      <div slot="tooltip-content">${content}</div>
-      <div>tooltip</div>
-    </pixel-tooltip>`);
+    await fixture(
+      html`<pixel-tooltip>
+        <div slot="tooltip-content">${content}</div>
+        <div>tooltip</div>
+      </pixel-tooltip>`,
+    );
 
     expect(screen.queryByShadowText(content)?.assignedSlot?.parentElement?.parentElement).not.toHaveClass(
-      'pixel-tooltip--show'
+      'pixel-tooltip--show',
     );
   });
 
   it('should display tooltip content', async () => {
     const content = 'content';
-    await fixture(html`<pixel-tooltip>
-      <div slot="tooltip-content">${content}</div>
-      <div>tooltip</div>
-    </pixel-tooltip>`);
+    await fixture(
+      html`<pixel-tooltip>
+        <div slot="tooltip-content">${content}</div>
+        <div>tooltip</div>
+      </pixel-tooltip>`,
+    );
 
     await userEvent.hover(screen.getByShadowText('tooltip'));
 
     expect(screen.queryByShadowText(content)?.assignedSlot?.parentElement?.parentElement).toHaveClass(
-      'pixel-tooltip--show'
+      'pixel-tooltip--show',
     );
   });
 });

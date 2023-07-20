@@ -35,12 +35,13 @@ import '../button/button';
   }}
 />
 
-export const Template = ({ content, show, ...args }) => html`<div style="margin: 15rem;">
-  <pixel-tooltip ?show=${show} ${spread(args)}>
-    <div slot="tooltip-content">${content} Tooltip</div>
-    <pixel-button>Button</pixel-button>
-  </pixel-tooltip>
-</div>`;
+export const Template = ({ content, show, ...args }) =>
+  html`<div style="margin: 15rem;">
+    <pixel-tooltip ?show=${show} ${spread(args)}>
+      <div slot="tooltip-content">${content} Tooltip</div>
+      <pixel-button>Button</pixel-button>
+    </pixel-tooltip>
+  </div>`;
 
 # tooltip
 
