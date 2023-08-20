@@ -42,7 +42,7 @@ jobs:
           pnpm --parallel check
           pnpm --parallel test
       - name: Build
-        run: pnpm build
+        run: pnpm build:docs
       - name: Upload
         uses: actions/upload-artifact@master
         with:
