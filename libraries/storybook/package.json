@@ -15,14 +15,14 @@
   "license": "ISC",
   "devDependencies": {
     "@pixel-io/styles": "workspace:*",
-    "@storybook/addon-essentials": "^7.3.1",
-    "@storybook/addon-links": "^7.3.1",
-    "@storybook/blocks": "^7.3.1",
-    "@storybook/web-components": "^7.3.1",
-    "@storybook/web-components-vite": "^7.3.1",
+    "@storybook/addon-essentials": "^7.3.2",
+    "@storybook/addon-links": "^7.3.2",
+    "@storybook/blocks": "^7.3.2",
+    "@storybook/web-components": "^7.3.2",
+    "@storybook/web-components-vite": "^7.3.2",
     "lit-html": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.3.1"
+    "storybook": "^7.3.2"
   }
 }
