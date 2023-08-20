@@ -18,6 +18,7 @@
     "dev": "vite build --watch",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "clean": "rm -rf ./dist",
     "check": "pnpm check:lint && pnpm check:stylelint && pnpm check:format",
     "check:lint": "eslint ./src/**/*.{js,ts}",
     "check:stylelint": "stylelint ./src/**/*.scss",
