@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/jiayike/pixel-io/compare/styles-v0.3.0...styles-v0.3.1) (2023-08-24)
+
+
+### Features
+
+* enable navigation to be positioned at the top or bottom ([d217b69](https://github.com/jiayike/pixel-io/commit/d217b699ab9ea1b58f9b1e44a1535abf63c76e25))
+
 ## [0.3.0](https://github.com/jiayike/pixel-io/compare/styles-v0.2.1...styles-v0.3.0) (2023-04-20)
 
 
