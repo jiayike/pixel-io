@@ -2,12 +2,12 @@
   "name": "@pixel-io/components",
   "version": "0.3.1",
   "type": "module",
-  "main": "dist/index.es.js",
+  "main": "./dist/index.es.js",
   "exports": {
     ".": "./dist/index.es.js",
-    "./dist/": "./dist/"
+    "./components/*": "./dist/components/*"
   },
-  "types": "types/index.d.ts",
+  "types": "./types/index.d.ts",
   "files": [
     "dist",
     "types"
@@ -37,6 +37,7 @@
     "@vitest/coverage-v8": "^0.34.2",
     "eslint": "^8.47.0",
     "eslint-plugin-lit": "^1.9.1",
+    "fast-glob": "^3.3.1",
     "jsdom": "^22.1.0",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.2",

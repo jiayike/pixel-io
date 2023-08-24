@@ -1,8 +1,14 @@
+// resets
+@use "./base/reset";
+
 // abstracts/
 @use "./abstracts/variables";
 
 // global
 @use "./global";
+
+// base/
+@use "./base/animations";
 
 // components/
 @use "./atoms/button";
