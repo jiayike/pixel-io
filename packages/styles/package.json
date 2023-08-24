@@ -29,7 +29,7 @@
     "@pixel-io/eslint-config": "workspace:*",
     "@pixel-io/prettier-config": "workspace:*",
     "eslint": "^8.47.0",
-    "lint-staged": "^14.0.0",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
     "sass": "^1.66.1",
@@ -38,7 +38,7 @@
     "stylelint-order": "^6.0.3",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
-    "vite-plugin-stylelint": "^5.0.0"
+    "vite-plugin-stylelint": "^5.1.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
