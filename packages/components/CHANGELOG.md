@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/jiayike/pixel-io/compare/components-v0.3.0...components-v0.3.1) (2023-08-24)
+
+
+### Features
+
+* add tooltip ([e92e517](https://github.com/jiayike/pixel-io/commit/e92e5173f0623911d8158dbf4270502e7fdc4a2c))
+* add types to dist folder ([e6e921e](https://github.com/jiayike/pixel-io/commit/e6e921e21afc410f0efea72d0bf3747c319dedab))
+
 ## [0.3.0](https://github.com/jiayike/pixel-io/compare/components-v0.2.1...components-v0.3.0) (2023-04-20)
 
 
