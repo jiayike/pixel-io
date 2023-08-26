@@ -28,19 +28,6 @@ const meta: Meta<ArgTypes> = {
   },
   decorators: [withActions],
   render: ({ position }) =>
-    html`<nav style="background: white;" class="pixel-navigation ${position}">
-      <div class="pixel-navigation__wrapper">
-        <h4>Pixel Navigation</h4>
-      </div>
-    </nav>`,
-};
-
-export default meta;
-
-export const Navigation: Story = {};
-
-export const NavigationBarWithButtons: Story = {
-  render: ({ position }) =>
     html`<nav class="pixel-navigation ${position}">
       <div class="pixel-navigation__wrapper">
         <button class="pixel-button pixel-button--primary">Home</button>
@@ -51,3 +38,7 @@ export const NavigationBarWithButtons: Story = {
       </div>
     </nav>`,
 };
+
+export default meta;
+
+export const Navigation: Story = {};
