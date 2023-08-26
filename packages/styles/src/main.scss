@@ -1,16 +1,14 @@
 // resets
 @use "./base/reset";
 
-// abstracts/
-@use "./abstracts/variables";
-
 // global
 @use "./global";
 
-// base/
-@use "./base/animations";
+// abstracts/
+@use "./abstracts/variables";
 
 // components/
+@use "./atoms/animations";
 @use "./atoms/button";
 @use "./atoms/tooltip";
 @use "./molecules/navigation";

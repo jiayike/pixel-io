@@ -7,7 +7,7 @@ interface ArgTypes {
 }
 
 const meta: Meta<ArgTypes> = {
-  title: 'Customization/Animations',
+  title: 'Atoms/Animations',
   argTypes: {
     type: {
       description: 'Type of animation.',
