@@ -25,6 +25,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  // "exclude": ["src/**/*.test.ts", "src/vitest-setup.ts"],
   "extends": "./tsconfig.test.json"
 }
