@@ -28,7 +28,7 @@
   "devDependencies": {
     "@pixel-io/eslint-config": "workspace:*",
     "@pixel-io/prettier-config": "workspace:*",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
     "lint-staged": "^14.0.1",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
@@ -36,7 +36,7 @@
     "stylelint": "^15.10.3",
     "stylelint-config-standard-scss": "^10.0.0",
     "stylelint-order": "^6.0.3",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-stylelint": "^5.1.1"
   },
