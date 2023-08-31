@@ -44,9 +44,9 @@ const meta: Meta<ArgTypes> = {
 
 export default meta;
 
-export const Animations: Story = {};
+export const AnimatedButton: Story = {};
 
-export const WithAnimatedButtons: Story = {
+export const AnimatedNavigation: Story = {
   argTypes: {
     type: {
       table: {
