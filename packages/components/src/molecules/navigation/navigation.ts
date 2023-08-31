@@ -31,3 +31,9 @@ export class PixelNavigation extends LitElement {
     `;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'pixel-navigation': PixelNavigation;
+  }
+}
