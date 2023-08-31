@@ -12,6 +12,7 @@ type AnimationDelayTypes = '1' | '2' | '3' | '4';
  * Button Component.
  *
  * @slot - This element has a slot
+ * @event onClick
  */
 @customElement('pixel-button')
 export class PixelButton extends LitElement {
@@ -19,6 +20,7 @@ export class PixelButton extends LitElement {
 
   /**
    * Button style type.
+   * @type {'primary' | 'secondary'}
    */
   @property()
   type: ButtonTypes = 'primary';
@@ -35,15 +37,15 @@ export class PixelButton extends LitElement {
   @property()
   animationDelay?: AnimationDelayTypes;
 
-  private onClick = (): void => {
+  private onClick(): void {
     const event = new CustomEvent('onClick', {
       bubbles: true,
       composed: true,
     });
     this.dispatchEvent(event);
-  };
+  }
 
-  private getAnimationClasses = (): string => {
+  private getAnimationClasses(): string {
     const classes = [];
     if (this.animationType) {
       classes.push(`animate__${this.animationType}`);
@@ -54,7 +56,7 @@ export class PixelButton extends LitElement {
     }
 
     return classes.join(' ');
-  };
+  }
 
   render(): TemplateResult {
     return html`
