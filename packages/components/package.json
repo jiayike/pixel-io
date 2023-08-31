@@ -6,7 +6,7 @@
   "exports": {
     ".": "./dist/index.es.js",
     "./customElements": "./dist/custom-elements.json",
-    "./*": "./dist/components/*"
+    "./*": "./dist/*"
   },
   "customElements": "./dist/custom-elements.json",
   "types": "./types/index.d.ts",
@@ -42,7 +42,7 @@
     "fast-glob": "^3.3.1",
     "jsdom": "^22.1.0",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3",
+    "prettier": "^3.0.2",
     "sass": "^1.66.1",
     "shadow-dom-testing-library": "^1.11.0",
     "typescript": "^5.2.2",
