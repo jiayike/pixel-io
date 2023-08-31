@@ -22,6 +22,7 @@ export class PixelTooltip extends LitElement {
 
   /**
    * Tooltip position.
+   * @type {'top' | 'bottom' | 'left' | 'right'}
    */
   @property()
   position: PositionTypes = 'top';
@@ -32,13 +33,13 @@ export class PixelTooltip extends LitElement {
   @property({ type: Boolean })
   show = false;
 
-  mouseOver = (): void => {
+  private mouseOver(): void {
     this.show = true;
-  };
+  }
 
-  mouseOut = (): void => {
+  private mouseOut(): void {
     this.show = false;
-  };
+  }
 
   render(): TemplateResult {
     return html`
