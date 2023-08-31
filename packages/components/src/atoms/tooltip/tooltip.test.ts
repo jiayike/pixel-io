@@ -18,7 +18,7 @@ describe('PixelTooltip', () => {
       </pixel-tooltip>`,
     );
 
-    expect(screen.queryByShadowText(content)?.assignedSlot?.parentElement?.parentElement).not.toHaveClass(
+    expect(screen.getByShadowText(content).assignedSlot?.parentElement?.parentElement).not.toHaveClass(
       'pixel-tooltip--show',
     );
   });
@@ -34,7 +34,7 @@ describe('PixelTooltip', () => {
 
     await userEvent.hover(screen.getByShadowText('tooltip'));
 
-    expect(screen.queryByShadowText(content)?.assignedSlot?.parentElement?.parentElement).toHaveClass(
+    expect(screen.getByShadowText(content)?.assignedSlot?.parentElement?.parentElement).toHaveClass(
       'pixel-tooltip--show',
     );
   });

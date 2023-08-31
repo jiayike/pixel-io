@@ -5,8 +5,6 @@ import reset from '@pixel-io/styles/src/base/_reset.scss?inline';
 import animations from '@pixel-io/styles/src/atoms/_animations.scss?inline';
 
 type ButtonTypes = 'primary' | 'secondary';
-type AnimationTypes = 'slide-in';
-type AnimationDelayTypes = '1' | '2' | '3' | '4';
 
 /**
  * Button Component.
@@ -25,18 +23,6 @@ export class PixelButton extends LitElement {
   @property()
   type: ButtonTypes = 'primary';
 
-  /**
-   * Button animation type.
-   */
-  @property()
-  animationType?: AnimationTypes;
-
-  /**
-   * Button animation delay.
-   */
-  @property()
-  animationDelay?: AnimationDelayTypes;
-
   private onClick(): void {
     const event = new CustomEvent('onClick', {
       bubbles: true,
@@ -45,22 +31,9 @@ export class PixelButton extends LitElement {
     this.dispatchEvent(event);
   }
 
-  private getAnimationClasses(): string {
-    const classes = [];
-    if (this.animationType) {
-      classes.push(`animate__${this.animationType}`);
-    }
-
-    if (this.animationDelay) {
-      classes.push(`animate__delay-${this.animationDelay}`);
-    }
-
-    return classes.join(' ');
-  }
-
   render(): TemplateResult {
     return html`
-      <button class="pixel-button pixel-button--${this.type} ${this.getAnimationClasses()}" @click=${this.onClick}>
+      <button class="pixel-button pixel-button--${this.type}" @click=${this.onClick}>
         <slot></slot>
       </button>
     `;

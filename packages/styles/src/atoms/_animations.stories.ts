@@ -12,7 +12,10 @@ const meta: Meta<ArgTypes> = {
     type: {
       description: 'Type of animation.',
       control: { type: 'select' },
-      options: ['', 'animate__slide-in'],
+      options: ['animate__slide-in', 'No animation'],
+      mapping: {
+        'No animation': '',
+      },
       table: {
         type: { summary: 'string' },
       },
@@ -20,7 +23,10 @@ const meta: Meta<ArgTypes> = {
     delay: {
       description: 'Delay for the animation.',
       control: { type: 'select' },
-      options: ['', 'animate__delay-1', 'animate__delay-2', 'animate__delay-3', 'animate__delay-4'],
+      options: ['animate__delay-1', 'animate__delay-2', 'animate__delay-3', 'animate__delay-4', 'No delay'],
+      mapping: {
+        'No delay': '',
+      },
       table: {
         type: { summary: 'string' },
       },

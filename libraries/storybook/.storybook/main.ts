@@ -26,7 +26,7 @@ const findStories = (): StoriesEntry[] => {
 
   return [
     ...storyPaths.map(getStoriesEntry("**/*.mdx")),
-    ...storyPaths.map(getStoriesEntry("**/*.stories.@(js|jsx|ts|tsx|mdx)")),
+    ...storyPaths.map(getStoriesEntry("**/*.stories.@(js|jsx|ts|tsx)")),
   ];
 };
 
