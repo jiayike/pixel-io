@@ -1,6 +1,11 @@
 import { themes } from "@storybook/theming";
 import type { Preview } from "@storybook/web-components";
+import { setCustomElementsManifest } from "@storybook/web-components";
+// @ts-ignore
+import customElements from "@pixel-io/components/customElements";
 import "@pixel-io/styles";
+
+setCustomElementsManifest(customElements);
 
 const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const theme = isDarkMode ? themes.dark : themes.light;

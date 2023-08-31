@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@pixel-io/styles": "workspace:*",
+    "@pixel-io/components": "workspace:*",
     "@storybook/addon-essentials": "^7.3.2",
     "@storybook/addon-links": "^7.3.2",
     "@storybook/blocks": "^7.3.2",

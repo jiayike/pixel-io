@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import glob from 'fast-glob';
+import vitePluginCustomElementsManifest from 'vite-plugin-cem';
 
 const folders = ['atoms', 'molecules'];
 
@@ -28,6 +29,13 @@ export default defineConfig({
       external: /^lit/,
     },
   },
+  plugins: [
+    vitePluginCustomElementsManifest({
+      files: Object.values(componentEntries),
+      lit: true,
+      dev: true,
+    }),
+  ],
   test: {
     globals: true,
     environment: 'jsdom',

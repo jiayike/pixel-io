@@ -5,8 +5,10 @@
   "main": "./dist/index.es.js",
   "exports": {
     ".": "./dist/index.es.js",
-    "./components/*": "./dist/components/*"
+    "./customElements": "./dist/custom-elements.json",
+    "./*": "./dist/components/*"
   },
+  "customElements": "./dist/custom-elements.json",
   "types": "./types/index.d.ts",
   "files": [
     "dist",
@@ -45,6 +47,7 @@
     "shadow-dom-testing-library": "^1.11.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
+    "vite-plugin-cem": "^0.5.0",
     "vitest": "^0.34.3"
   }
 }

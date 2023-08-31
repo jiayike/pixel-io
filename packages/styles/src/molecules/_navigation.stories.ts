@@ -23,7 +23,7 @@ const meta: Meta<ArgTypes> = {
   },
   parameters: {
     actions: {
-      handles: ['click'],
+      handles: ['click button'],
     },
   },
   decorators: [withActions],
