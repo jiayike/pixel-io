@@ -4,4 +4,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json', './tsconfig.node.json'],
   },
+  rules: {
+    '@typescript-eslint/unbound-method': 'off',
+  },
 };
