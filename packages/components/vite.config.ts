@@ -22,8 +22,7 @@ export default defineConfig({
         index: './src/index.ts',
         ...componentEntries,
       },
-      formats: ['es'],
-      fileName: (fmt, name) => (name === 'index' ? `${name}.${fmt}.js` : `${name}/index.${fmt}.js`),
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
       external: /^lit/,
