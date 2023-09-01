@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.4.0](https://github.com/jiayike/pixel-io/compare/styles-v0.3.1...styles-v0.4.0) (2023-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* extract animation to separate component
+* corrected distribution package folder structure
+
+### Features
+
+* add auto gen custom element manifest ([d0adc90](https://github.com/jiayike/pixel-io/commit/d0adc90928b71afbe0a1734fbc5a3d3361772cb9))
+
+
+### Bug Fixes
+
+* corrected distribution package folder structure ([8e30ab5](https://github.com/jiayike/pixel-io/commit/8e30ab576c4f8bf5af1d1623885d0a89e8940457))
+
+
+### Code Refactoring
+
+* extract animation to separate component ([65f6f72](https://github.com/jiayike/pixel-io/commit/65f6f7243c11827a3d6cc1ed3cfe2c5b6caa4b70))
+
 ## [0.3.1](https://github.com/jiayike/pixel-io/compare/styles-v0.3.0...styles-v0.3.1) (2023-08-24)
 
 
