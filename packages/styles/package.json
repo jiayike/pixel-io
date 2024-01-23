@@ -28,17 +28,17 @@
   "devDependencies": {
     "@pixel-io/eslint-config": "workspace:*",
     "@pixel-io/prettier-config": "workspace:*",
-    "eslint": "^8.48.0",
+    "eslint": "^8.56.0",
     "lint-staged": "^14.0.1",
-    "postcss": "^8.4.29",
-    "prettier": "^3.0.3",
-    "sass": "^1.66.1",
-    "stylelint": "^15.10.3",
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.4",
+    "sass": "^1.70.0",
+    "stylelint": "^15.11.0",
     "stylelint-config-standard-scss": "^10.0.0",
-    "stylelint-order": "^6.0.3",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vite-plugin-stylelint": "^5.1.1"
+    "stylelint-order": "^6.0.4",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.2",
+    "vite-plugin-stylelint": "^5.3.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

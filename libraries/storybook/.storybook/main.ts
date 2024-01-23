@@ -1,6 +1,6 @@
 import type { StorybookConfig } from "@storybook/web-components-vite";
 import type { StoriesEntry } from "@storybook/types";
-import { HmrOptions, InlineConfig, mergeConfig } from "vite";
+import { HmrOptions, mergeConfig } from "vite";
 import * as path from "path";
 
 type titlePrefix = string;
@@ -40,7 +40,7 @@ const config: StorybookConfig = {
   features: {
     storyStoreV7: true,
   },
-  async viteFinal(config: InlineConfig) {
+  async viteFinal(config) {
     const { port } = (config.server?.hmr as HmrOptions) || {};
 
     // return the customized config
