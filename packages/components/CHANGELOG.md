@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/jiayike/pixel-io/compare/components-v0.4.0...components-v0.4.1) (2024-01-23)
+
+
+### Bug Fixes
+
+* corrected module export file name ([ae52b9a](https://github.com/jiayike/pixel-io/commit/ae52b9aa60dee91536df3b61568c3a6258fa4a49))
+
 ## [0.4.0](https://github.com/jiayike/pixel-io/compare/components-v0.3.1...components-v0.4.0) (2023-09-01)
 
 
