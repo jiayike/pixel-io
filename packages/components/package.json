@@ -2,9 +2,9 @@
   "name": "@pixel-io/components",
   "version": "0.4.0",
   "type": "module",
-  "main": "./dist/index.es.js",
+  "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.es.js",
+    ".": "./dist/index.js",
     "./customElements": "./dist/custom-elements.json",
     "./*": "./dist/*"
   },
