@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/jiayike/pixel-io/compare/components-v0.4.1...components-v0.4.2) (2024-01-25)
+
+
+### Features
+
+* add exports for PixelAnimation and PixelTooltip ([056b6cf](https://github.com/jiayike/pixel-io/commit/056b6cf829497b35ef86275c0976df461794992a))
+
 ## [0.4.1](https://github.com/jiayike/pixel-io/compare/components-v0.4.0...components-v0.4.1) (2024-01-23)
 
 
