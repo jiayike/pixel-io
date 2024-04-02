@@ -1,11 +1,15 @@
 tasks:
-  - name: Install required dependencies for cypress
-    command: |
-      apt-get install xvfb
   - name: Upgrade npm and pnpm
     command: |
       npm i -g npm;
       npm i -g pnpm;
       echo "Upgrade completed. Exiting...";
+      sleep 10;
+      exit;
+  - name: Setup cypress
+    before: apt-get install xvfb;
+    command: |
+      pnpx cypress install;
+      echo "Cypress setup completed. Exiting...";
       sleep 10;
       exit;
