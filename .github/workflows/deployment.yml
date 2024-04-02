@@ -39,11 +39,14 @@ jobs:
 
       - name: Install dependencies
         run: pnpm i
+
       - name: Lint and Test
         uses: cypress-io/github-action@v6
-      - run: |
-          pnpm --parallel check
-          pnpm --parallel test
+        with:
+          install: false
+          command: |
+            pnpm --parallel check
+            pnpm --parallel test
 
       - name: Build
         run: pnpm build:docs
