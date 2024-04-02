@@ -20,26 +20,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  install:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm i
-
+  build:
+    runs-on: ubuntu-latest
+    needs: install
+    steps:
       - name: Lint
         run: pnpm --parallel check
 
@@ -47,7 +39,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           install: false
-          command: pnpm --parallel test
+          start: pnpm --parallel test
 
       - name: Build
         run: pnpm build:docs
