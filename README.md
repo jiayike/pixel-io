@@ -8,11 +8,14 @@ UI component library
 
 ## Requirements
 
-- pnpm ^7.22.0
+- pnpm ^8.15.6
 
 ## Install
 
-`pnpm i`
+```sh
+pnpm i
+pnpm i -F <package name> # install for specific package
+```
 
 ## Start
 
