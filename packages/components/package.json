@@ -19,7 +19,7 @@
     "build": "pnpm clean && tsc -b tsconfig.build.json && vite build",
     "clean": "rm -rf ./dist && rm -rf ./types",
     "cy:open": "cypress open",
-    "cy:run": "cypress run --component --browser chrome",
+    "cy:run": "cypress run --component --browser chrome --config-file './cypress.config.ts'",
     "test": "pnpm cy:run",
     "test:watch": "pnpm cy:open && pnpm cy:run",
     "check": "pnpm check:lint && pnpm check:format",
