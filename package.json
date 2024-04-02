@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/jiayike/pixel-io#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.8.1",
-    "@commitlint/config-conventional": "^17.8.1",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.3"
+    "husky": "^9.0.11"
   }
 }
