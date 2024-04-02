@@ -9,7 +9,6 @@ tasks:
       sleep 10;
       exit;
   - name: Setup cypress
-    before: apt-get install xvfb;
     command: |
       pnpx cypress install;
       echo "Cypress setup completed. Exiting...";
