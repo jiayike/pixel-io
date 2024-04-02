@@ -11,11 +11,12 @@ tasks:
       npm i -g npm;
       npm i -g pnpm;
       echo "Upgrade completed. Exiting...";
-      sleep 10;
+      sleep 3;
       exit;
-  - name: Setup cypress
+  - name: Setup workspace and cypress
     command: |
+      pnpm i;
       pnpx cypress install;
       echo "Cypress setup completed. Exiting...";
-      sleep 10;
+      sleep 3;
       exit;
