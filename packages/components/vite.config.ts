@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import glob from 'fast-glob';
 import vitePluginCustomElementsManifest from 'vite-plugin-cem';
@@ -7,9 +6,9 @@ const folders = ['atoms', 'molecules'];
 
 const files: [PropertyKey, string][] = glob
   .sync([`./src/{${folders.join(',')}}/**/*.ts`], { ignore: ['**/*.stories.ts', '**/*.test.ts'] })
-  .map((file) => {
-    const key = file.match(/(?<=\.\/src\/).*(?=\/.*\.ts)/)!;
-    return [`${key[0]}`, file];
+  .map((filePath) => {
+    const key = filePath.match(/(?<=\.\/src\/).*(?=\/.*\.ts)/) ?? '';
+    return [`${key[0]}`, filePath];
   });
 
 const componentEntries = Object.fromEntries<string>(files);
@@ -35,16 +34,4 @@ export default defineConfig({
       dev: true,
     }),
   ],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    reporters: ['verbose'],
-    setupFiles: ['./src/vitest-setup.ts'],
-    coverage: {
-      reporter: ['text', 'json', 'html'],
-      all: true,
-      include: ['src/**/*.ts'],
-      provider: 'v8',
-    },
-  },
 });

@@ -1,5 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["vitest/globals", "@testing-library/dom/types", "@open-wc/testing-helpers/types"]
+    "types": ["cypress", "cypress-ct-lit"]
   }
 }
