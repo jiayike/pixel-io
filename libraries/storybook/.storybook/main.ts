@@ -37,9 +37,6 @@ const config: StorybookConfig = {
     name: "@storybook/web-components-vite",
     options: {},
   },
-  features: {
-    storyStoreV7: true,
-  },
   async viteFinal(config) {
     const { port } = (config.server?.hmr as HmrOptions) || {};
 

@@ -6,3 +6,5 @@ tasks:
       echo "Upgrade completed. Exiting...";
       sleep 3;
       exit;
+  - name: Install dependencies
+    command: pnpm i --frozen-lockfile;
