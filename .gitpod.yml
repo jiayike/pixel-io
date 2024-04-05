@@ -1,22 +1,8 @@
-image:
-  file: .gitpod.Dockerfile
-ports:
-  - port: 5900
-    onOpen: ignore
-  - port: 6080
-    onOpen: open-preview
 tasks:
   - name: Upgrade npm and pnpm
     command: |
       npm i -g npm;
       npm i -g pnpm;
       echo "Upgrade completed. Exiting...";
-      sleep 3;
-      exit;
-  - name: Setup workspace and cypress
-    command: |
-      pnpm i;
-      pnpx cypress install;
-      echo "Cypress setup completed. Exiting...";
       sleep 3;
       exit;

@@ -9,6 +9,7 @@
     "build": "pnpm --stream --parallel build",
     "build:docs": "pnpm build && pnpm -F storybook build-storybook",
     "test": "pnpm --stream --parallel test",
+    "test:ci": "pnpm --stream --parallel test:ci",
     "test:watch": "pnpm --stream --parallel test:watch",
     "prepare": "husky install",
     "commit": "cz",

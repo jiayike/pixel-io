@@ -41,12 +41,8 @@ jobs:
       - name: Lint
         run: pnpm --parallel check
 
-      - name: Test
-        uses: cypress-io/github-action@v6
-        with:
-          install: false
-          command: pnpm test
-          working-directory: packages/components
+      - name: Run Storybook tests
+        run: pnpm --parallel test:ci
 
       - name: Build
         run: pnpm build:docs
