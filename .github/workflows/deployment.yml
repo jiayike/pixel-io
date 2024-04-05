@@ -42,7 +42,7 @@ jobs:
         run: pnpm --parallel check
 
       - name: Run Storybook tests
-        run: pnpm --parallel test:ci
+        run: pnpm --parallel test
 
       - name: Build
         run: pnpm build:docs
