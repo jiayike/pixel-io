@@ -24,6 +24,5 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "extends": "./tsconfig.test.json"
+  "include": ["src"]
 }
