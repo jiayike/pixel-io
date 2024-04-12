@@ -1,6 +1,6 @@
 import { html, LitElement, TemplateResult, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import navigationStyle from '@pixel-io/styles/src/molecules/_navigation.scss?inline';
+import navigationStyle from '@pixel-io/styles/src/atoms/_navigation.scss?inline';
 import reset from '@pixel-io/styles/src/base/_reset.scss?inline';
 
 type PositionTypes = 'top' | 'bottom';

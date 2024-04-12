@@ -5,7 +5,7 @@ import { spread } from '@open-wc/lit-helpers';
 import { type PixelAnimation } from './animation';
 import './animation';
 import '../button/button';
-import '../../molecules/navigation/navigation';
+import '../navigation/navigation';
 
 const meta: Meta<PixelAnimation> = {
   title: 'Atoms/Animation',

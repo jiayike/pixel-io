@@ -3,10 +3,10 @@ import { withActions } from '@storybook/addon-actions/decorator';
 import { html } from 'lit-html';
 import { type PixelNavigation } from './navigation';
 import './navigation';
-import '../../atoms/button/button';
+import '../button/button';
 
 const meta: Meta<PixelNavigation> = {
-  title: 'Molecules/Navigation',
+  title: 'Atoms/Navigation',
   component: 'pixel-navigation',
   argTypes: {
     position: {

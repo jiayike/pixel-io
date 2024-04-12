@@ -7,7 +7,7 @@ interface ArgTypes {
 }
 
 const meta: Meta<ArgTypes> = {
-  title: 'Molecules/Navigation',
+  title: 'Atoms/Navigation',
   argTypes: {
     position: {
       description: 'Position of the navigation bar.',
