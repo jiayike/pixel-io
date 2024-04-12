@@ -11,7 +11,7 @@
     "check": "pnpm --parallel check",
     "test": "pnpm build && pnpm --parallel test",
     "test:watch": "pnpm --parallel test:watch",
-    "prepare": "husky install",
+    "prepare": "husky",
     "commit": "cz",
     "commit:retry": "cz --retry",
     "reset": "pnpm -r exec rm -rf node_modules && rm -rf node_modules && rm -f pnpm-lock.yaml"
