@@ -1,4 +1,4 @@
-import { LitElement, unsafeCSS, html, TemplateResult } from 'lit';
+import { LitElement, unsafeCSS, html, TemplateResult, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import buttonStyle from '@pixel-io/styles/src/atoms/_button.scss?inline';
 import reset from '@pixel-io/styles/src/base/_reset.scss?inline';
@@ -14,7 +14,16 @@ type ButtonTypes = 'primary' | 'secondary';
  */
 @customElement('pixel-button')
 export class PixelButton extends LitElement {
-  static styles = [unsafeCSS(reset), unsafeCSS(animations), unsafeCSS(buttonStyle)];
+  static styles = [
+    unsafeCSS(reset),
+    unsafeCSS(animations),
+    unsafeCSS(buttonStyle),
+    css`
+      :host {
+        display: inline-block;
+      }
+    `,
+  ];
 
   /**
    * Button style type.

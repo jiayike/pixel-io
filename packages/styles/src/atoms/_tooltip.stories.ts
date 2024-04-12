@@ -26,7 +26,7 @@ const meta: Meta<ArgTypes> = {
   render: ({ position, show }) => {
     const margin = position === 'left' ? '15rem' : '10rem';
 
-    return html`<div class="pixel-tooltip-container" style="margin-${position}: ${margin};">
+    return html`<div class="pixel-tooltip-container" style="margin: 1rem; margin-${position}: ${margin};">
       <div class="pixel-tooltip pixel-tooltip--${position} ${show && 'pixel-tooltip--show'}">
         <div class="pixel-tooltip__arrow pixel-tooltip__arrow--${position}"></div>
         <div class="pixel-tooltip__wrapper">Tooltip Content</div>
