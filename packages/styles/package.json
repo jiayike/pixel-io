@@ -33,11 +33,11 @@
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "sass": "^1.75.0",
-    "stylelint": "^16.3.1",
+    "stylelint": "^16.4.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4",
     "typescript": "^5.4.5",
-    "vite": "^5.2.8",
+    "vite": "^5.2.10",
     "vite-plugin-stylelint": "^5.3.1"
   },
   "dependencies": {
