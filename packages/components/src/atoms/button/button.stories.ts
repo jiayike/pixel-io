@@ -35,3 +35,10 @@ export const Secondary: Story = {
     type: 'secondary',
   },
 };
+
+export const Icon: Story = {
+  args: {
+    type: 'icon',
+    slot: 'X',
+  },
+};

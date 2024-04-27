@@ -4,7 +4,7 @@ import buttonStyle from '@pixel-io/styles/src/atoms/_button.scss?inline';
 import reset from '@pixel-io/styles/src/base/_reset.scss?inline';
 import animations from '@pixel-io/styles/src/atoms/_animations.scss?inline';
 
-type ButtonTypes = 'primary' | 'secondary';
+type ButtonTypes = 'primary' | 'secondary' | 'icon';
 
 /**
  * Button Component.

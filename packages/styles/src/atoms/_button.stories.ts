@@ -50,3 +50,10 @@ export const Secondary: Story = {
     content: 'Secondary Button',
   },
 };
+
+export const Icon: Story = {
+  args: {
+    type: 'pixel-button--icon',
+    content: 'X',
+  },
+};

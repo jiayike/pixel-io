@@ -20,4 +20,12 @@
     background-color: var(--pixel-secondary-color);
     color: var(--pixel-secondary-text-color);
   }
+
+  &--icon {
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    padding: 0;
+  }
 }
