@@ -15,12 +15,6 @@ export class PixelTooltip extends LitElement {
   static styles = [unsafeCSS(reset), unsafeCSS(tooltipStyle)];
 
   /**
-   * Tooltip content.
-   */
-  @property()
-  content = '';
-
-  /**
    * Tooltip position.
    * @type {'top' | 'bottom' | 'left' | 'right'}
    */

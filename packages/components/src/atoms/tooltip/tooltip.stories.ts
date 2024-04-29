@@ -23,10 +23,10 @@ const meta: Meta<PixelTooltip> = {
     },
   },
   decorators: [withActions],
-  render: ({ content, show, ...args }) =>
+  render: ({ slot, show, ...args }) =>
     html`<div style="margin: 15rem;">
       <pixel-tooltip ?show=${show} ${spread(args)}>
-        <div slot="tooltip-content">${content || 'Tooltip'}</div>
+        <div slot="tooltip-content">${slot || 'Tooltip'}</div>
         <pixel-button>Button</pixel-button>
       </pixel-tooltip>
     </div>`,
