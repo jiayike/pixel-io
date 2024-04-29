@@ -8,7 +8,12 @@
 @use "./abstracts/variables";
 
 // components/
+
+// atoms/
 @use "./atoms/animations";
 @use "./atoms/button";
 @use "./atoms/tooltip";
 @use "./atoms/navigation";
+
+// molecules/
+@use "./molecules/model";
