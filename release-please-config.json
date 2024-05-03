@@ -6,12 +6,16 @@
     {
       "type": "linked-versions",
       "groupName": "pixel-io release",
-      "components": ["packages/components", "packages/styles"]
+      "components": ["components", "styles"]
     }
   ],
   "packages": {
-    "packages/components": {},
-    "packages/styles": {},
+    "packages/components": {
+      "component": "components"
+    },
+    "packages/styles": {
+      "component": "styles"
+    },
     "packages/eslint-config": {},
     "packages/prettier-config": {}
   }
