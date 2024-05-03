@@ -20,13 +20,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  node-setup:
-    uses: ./.github/workflows/node-setup.yml
-
   build:
     runs-on: ubuntu-latest
-    needs: node-setup
     steps:
+      - uses: ./.github/actions/node-setup
+
       - name: Lint
         run: pnpm check
 
