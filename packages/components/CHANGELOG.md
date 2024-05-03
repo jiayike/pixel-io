@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.3](https://github.com/jiayike/pixel-io/compare/components-v0.4.2...components-v0.4.3) (2024-05-03)
+
+
+### Features
+
+* icon button ([4e9ac8e](https://github.com/jiayike/pixel-io/commit/4e9ac8ee33e0d0b269889cfc900b03d15fb3b744))
+* pixel-model ([3e04ec3](https://github.com/jiayike/pixel-io/commit/3e04ec355c124c725787573a317e73552f8c0ce3))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @pixel-io/styles bumped to 0.5.0
+
 ## [0.4.2](https://github.com/jiayike/pixel-io/compare/components-v0.4.1...components-v0.4.2) (2024-01-25)
 
 
