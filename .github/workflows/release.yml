@@ -16,6 +16,9 @@ jobs:
         id: release
 
       - if: ${{ fromJSON(steps.release.outputs.releases_created) }}
+        uses: actions/checkout@v4
+
+      - if: ${{ fromJSON(steps.release.outputs.releases_created) }}
         uses: ./.github/actions/node-setup
 
       - if: ${{ fromJSON(steps.release.outputs.releases_created) }}
