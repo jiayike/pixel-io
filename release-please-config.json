@@ -2,7 +2,13 @@
   "include-component-in-tag": true,
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
-  "plugins": ["node-workspace"],
+  "plugins": [
+    {
+      "type": "linked-versions",
+      "groupName": "pixel-io release",
+      "components": ["packages/components", "packages/styles"]
+    }
+  ],
   "packages": {
     "packages/components": {},
     "packages/styles": {},
