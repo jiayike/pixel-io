@@ -1,4 +1,5 @@
 {
+  "last-release-sha": "1443617116729e1a09131e2d31e6ba067acc23c8",
   "include-component-in-tag": true,
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
