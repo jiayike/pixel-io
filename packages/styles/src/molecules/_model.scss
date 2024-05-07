@@ -1,9 +1,13 @@
+@use "sass:map";
+@use "../abstracts/z-index" as zIndex;
+
 .pixel-model {
   align-items: center;
   display: flex;
   inset: 0;
   justify-content: center;
   position: fixed;
+  z-index: map.get(zIndex.$z-index, model);
 
   &--hide {
     display: none;
