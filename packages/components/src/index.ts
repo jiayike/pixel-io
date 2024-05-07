@@ -3,3 +3,4 @@ export { PixelAnimation } from './atoms/animation/animation';
 export { PixelButton } from './atoms/button/button';
 export { PixelTooltip } from './atoms/tooltip/tooltip';
 export { PixelNavigation } from './atoms/navigation/navigation';
+export { PixelModel } from './molecules/model/model';
