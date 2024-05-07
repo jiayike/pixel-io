@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4](https://github.com/jiayike/pixel-io/compare/components-v0.4.3...components-v0.4.4) (2024-05-07)
+
+
+### Bug Fixes
+
+* export pixel-model ([7115c91](https://github.com/jiayike/pixel-io/commit/7115c91168fd8429bdedf721eca5bcaf65cef391))
+* fix types export in package.json ([3ab1877](https://github.com/jiayike/pixel-io/commit/3ab1877452cea8fb14dfa4ed3d2b7a5cb53c4465))
+
 ## [0.4.3](https://github.com/jiayike/pixel-io/compare/components-v0.4.2...components-v0.4.3) (2024-05-03)
 
 
