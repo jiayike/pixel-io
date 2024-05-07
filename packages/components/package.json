@@ -4,7 +4,16 @@
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
+    ".": {
+      "import": {
+        "types": "./types/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./types/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
     "./customElements": "./dist/custom-elements.json",
     "./*": "./dist/*"
   },
