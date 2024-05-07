@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.5](https://github.com/jiayike/pixel-io/compare/components-v0.4.4...components-v0.4.5) (2024-05-07)
+
+
+### Miscellaneous Chores
+
+* **components:** Synchronize pixel-io release versions
+
 ## [0.4.4](https://github.com/jiayike/pixel-io/compare/components-v0.4.3...components-v0.4.4) (2024-05-07)
 
 
