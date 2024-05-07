@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.4](https://github.com/jiayike/pixel-io/compare/styles-v0.4.3...styles-v0.4.4) (2024-05-07)
+
+
+### Miscellaneous Chores
+
+* **styles:** Synchronize pixel-io release versions
+
 ## [0.4.3](https://github.com/jiayike/pixel-io/compare/styles-v0.4.2...styles-v0.4.3) (2024-05-03)
 
 
