@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.5](https://github.com/jiayike/pixel-io/compare/styles-v0.4.4...styles-v0.4.5) (2024-05-07)
+
+
+### Bug Fixes
+
+* add z-index to pixel-model ([589e669](https://github.com/jiayike/pixel-io/commit/589e6695f0ca5218e5882abae5ef98ed15599c65))
+
 ## [0.4.4](https://github.com/jiayike/pixel-io/compare/styles-v0.4.3...styles-v0.4.4) (2024-05-07)
 
 
