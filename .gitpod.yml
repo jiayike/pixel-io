@@ -1,9 +1,0 @@
-tasks:
-  - name: Upgrade and install dependencies
-    command: |
-      npm i -g npm;
-      npm i -g pnpm;
-      pnpm i --frozen-lockfile;
-      echo "Upgrade completed. Exiting...";
-      sleep 3;
-      exit;
